@@ -1,0 +1,2 @@
+add_executable(ConsumerAgent main.cpp consumerAgent/HttpResponse.cpp consumerAgent/HttpServer.cpp)
+target_link_libraries(ConsumerAgent muduo_net)
