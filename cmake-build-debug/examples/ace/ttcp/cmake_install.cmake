@@ -1,4 +1,4 @@
-# Install script for directory: /home/gaoguili/Desktop/muduo-1.0.1/examples/ace/ttcp
+# Install script for directory: /home/gaoguili/CLionProjects/muduo-agent/examples/ace/ttcp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

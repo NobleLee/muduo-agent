@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gaoguili/Desktop/muduo-1.0.1
+CMAKE_SOURCE_DIR = /home/gaoguili/CLionProjects/muduo-agent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,31 +59,31 @@ CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -94,13 +94,13 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -116,7 +116,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -126,14 +126,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/protobuf/rpcbench/CMakeFiles/progress.marks
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/rpcbench/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles 0
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/protobuf/rpcbench/CMakeFiles/progress.marks
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/rpcbench/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/rpcbench/clean
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/rpcbench/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/rpcbench/preinstall
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/rpcbench/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/rpcbench/preinstall
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/rpcbench/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/rule
 .PHONY : examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/rule
 
 # Convenience name for target.
@@ -168,12 +168,12 @@ echo_proto: examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/rule
 
 # fast build rule for target.
 echo_proto/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/build.make examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/build.make examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/build
 .PHONY : echo_proto/fast
 
 # Convenience name for target.
 examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_client.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_client.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_client.dir/rule
 .PHONY : examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_client.dir/rule
 
 # Convenience name for target.
@@ -183,12 +183,12 @@ protobuf_rpc_echo_client: examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_ech
 
 # fast build rule for target.
 protobuf_rpc_echo_client/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_client.dir/build.make examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_client.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_client.dir/build.make examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_client.dir/build
 .PHONY : protobuf_rpc_echo_client/fast
 
 # Convenience name for target.
 examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_server.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_server.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_server.dir/rule
 .PHONY : examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_server.dir/rule
 
 # Convenience name for target.
@@ -198,7 +198,7 @@ protobuf_rpc_echo_server: examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_ech
 
 # fast build rule for target.
 protobuf_rpc_echo_server/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_server.dir/build.make examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_server.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_server.dir/build.make examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_server.dir/build
 .PHONY : protobuf_rpc_echo_server/fast
 
 client.o: client.cc.o
@@ -207,7 +207,7 @@ client.o: client.cc.o
 
 # target to build an object file
 client.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_client.dir/build.make examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_client.dir/client.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_client.dir/build.make examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_client.dir/client.cc.o
 .PHONY : client.cc.o
 
 client.i: client.cc.i
@@ -216,7 +216,7 @@ client.i: client.cc.i
 
 # target to preprocess a source file
 client.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_client.dir/build.make examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_client.dir/client.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_client.dir/build.make examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_client.dir/client.cc.i
 .PHONY : client.cc.i
 
 client.s: client.cc.s
@@ -225,7 +225,7 @@ client.s: client.cc.s
 
 # target to generate assembly for a file
 client.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_client.dir/build.make examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_client.dir/client.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_client.dir/build.make examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_client.dir/client.cc.s
 .PHONY : client.cc.s
 
 echo.pb.o: echo.pb.cc.o
@@ -234,7 +234,7 @@ echo.pb.o: echo.pb.cc.o
 
 # target to build an object file
 echo.pb.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/build.make examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/echo.pb.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/build.make examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/echo.pb.cc.o
 .PHONY : echo.pb.cc.o
 
 echo.pb.i: echo.pb.cc.i
@@ -243,7 +243,7 @@ echo.pb.i: echo.pb.cc.i
 
 # target to preprocess a source file
 echo.pb.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/build.make examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/echo.pb.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/build.make examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/echo.pb.cc.i
 .PHONY : echo.pb.cc.i
 
 echo.pb.s: echo.pb.cc.s
@@ -252,7 +252,7 @@ echo.pb.s: echo.pb.cc.s
 
 # target to generate assembly for a file
 echo.pb.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/build.make examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/echo.pb.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/build.make examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/echo.pb.cc.s
 .PHONY : echo.pb.cc.s
 
 server.o: server.cc.o
@@ -261,7 +261,7 @@ server.o: server.cc.o
 
 # target to build an object file
 server.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_server.dir/build.make examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_server.dir/server.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_server.dir/build.make examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_server.dir/server.cc.o
 .PHONY : server.cc.o
 
 server.i: server.cc.i
@@ -270,7 +270,7 @@ server.i: server.cc.i
 
 # target to preprocess a source file
 server.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_server.dir/build.make examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_server.dir/server.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_server.dir/build.make examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_server.dir/server.cc.i
 .PHONY : server.cc.i
 
 server.s: server.cc.s
@@ -279,7 +279,7 @@ server.s: server.cc.s
 
 # target to generate assembly for a file
 server.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_server.dir/build.make examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_server.dir/server.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_server.dir/build.make examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_server.dir/server.cc.s
 .PHONY : server.cc.s
 
 # Help Target
@@ -317,6 +317,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

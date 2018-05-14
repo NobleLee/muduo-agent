@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gaoguili/Desktop/muduo-1.0.1
+CMAKE_SOURCE_DIR = /home/gaoguili/CLionProjects/muduo-agent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include examples/memcached/server/CMakeFiles/memcached_footprint.dir/depend.make
@@ -59,16 +59,16 @@ include examples/memcached/server/CMakeFiles/memcached_footprint.dir/flags.make
 
 examples/memcached/server/CMakeFiles/memcached_footprint.dir/Item.cc.o: examples/memcached/server/CMakeFiles/memcached_footprint.dir/flags.make
 examples/memcached/server/CMakeFiles/memcached_footprint.dir/Item.cc.o: ../examples/memcached/server/Item.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/memcached/server/CMakeFiles/memcached_footprint.dir/Item.cc.o"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/memcached/server && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/memcached_footprint.dir/Item.cc.o -c /home/gaoguili/Desktop/muduo-1.0.1/examples/memcached/server/Item.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/memcached/server/CMakeFiles/memcached_footprint.dir/Item.cc.o"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/memcached/server && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/memcached_footprint.dir/Item.cc.o -c /home/gaoguili/CLionProjects/muduo-agent/examples/memcached/server/Item.cc
 
 examples/memcached/server/CMakeFiles/memcached_footprint.dir/Item.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/memcached_footprint.dir/Item.cc.i"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/memcached/server && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/Desktop/muduo-1.0.1/examples/memcached/server/Item.cc > CMakeFiles/memcached_footprint.dir/Item.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/memcached/server && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/CLionProjects/muduo-agent/examples/memcached/server/Item.cc > CMakeFiles/memcached_footprint.dir/Item.cc.i
 
 examples/memcached/server/CMakeFiles/memcached_footprint.dir/Item.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/memcached_footprint.dir/Item.cc.s"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/memcached/server && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/Desktop/muduo-1.0.1/examples/memcached/server/Item.cc -o CMakeFiles/memcached_footprint.dir/Item.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/memcached/server && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/CLionProjects/muduo-agent/examples/memcached/server/Item.cc -o CMakeFiles/memcached_footprint.dir/Item.cc.s
 
 examples/memcached/server/CMakeFiles/memcached_footprint.dir/Item.cc.o.requires:
 
@@ -83,16 +83,16 @@ examples/memcached/server/CMakeFiles/memcached_footprint.dir/Item.cc.o.provides.
 
 examples/memcached/server/CMakeFiles/memcached_footprint.dir/MemcacheServer.cc.o: examples/memcached/server/CMakeFiles/memcached_footprint.dir/flags.make
 examples/memcached/server/CMakeFiles/memcached_footprint.dir/MemcacheServer.cc.o: ../examples/memcached/server/MemcacheServer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object examples/memcached/server/CMakeFiles/memcached_footprint.dir/MemcacheServer.cc.o"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/memcached/server && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/memcached_footprint.dir/MemcacheServer.cc.o -c /home/gaoguili/Desktop/muduo-1.0.1/examples/memcached/server/MemcacheServer.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object examples/memcached/server/CMakeFiles/memcached_footprint.dir/MemcacheServer.cc.o"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/memcached/server && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/memcached_footprint.dir/MemcacheServer.cc.o -c /home/gaoguili/CLionProjects/muduo-agent/examples/memcached/server/MemcacheServer.cc
 
 examples/memcached/server/CMakeFiles/memcached_footprint.dir/MemcacheServer.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/memcached_footprint.dir/MemcacheServer.cc.i"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/memcached/server && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/Desktop/muduo-1.0.1/examples/memcached/server/MemcacheServer.cc > CMakeFiles/memcached_footprint.dir/MemcacheServer.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/memcached/server && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/CLionProjects/muduo-agent/examples/memcached/server/MemcacheServer.cc > CMakeFiles/memcached_footprint.dir/MemcacheServer.cc.i
 
 examples/memcached/server/CMakeFiles/memcached_footprint.dir/MemcacheServer.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/memcached_footprint.dir/MemcacheServer.cc.s"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/memcached/server && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/Desktop/muduo-1.0.1/examples/memcached/server/MemcacheServer.cc -o CMakeFiles/memcached_footprint.dir/MemcacheServer.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/memcached/server && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/CLionProjects/muduo-agent/examples/memcached/server/MemcacheServer.cc -o CMakeFiles/memcached_footprint.dir/MemcacheServer.cc.s
 
 examples/memcached/server/CMakeFiles/memcached_footprint.dir/MemcacheServer.cc.o.requires:
 
@@ -107,16 +107,16 @@ examples/memcached/server/CMakeFiles/memcached_footprint.dir/MemcacheServer.cc.o
 
 examples/memcached/server/CMakeFiles/memcached_footprint.dir/Session.cc.o: examples/memcached/server/CMakeFiles/memcached_footprint.dir/flags.make
 examples/memcached/server/CMakeFiles/memcached_footprint.dir/Session.cc.o: ../examples/memcached/server/Session.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object examples/memcached/server/CMakeFiles/memcached_footprint.dir/Session.cc.o"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/memcached/server && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/memcached_footprint.dir/Session.cc.o -c /home/gaoguili/Desktop/muduo-1.0.1/examples/memcached/server/Session.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object examples/memcached/server/CMakeFiles/memcached_footprint.dir/Session.cc.o"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/memcached/server && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/memcached_footprint.dir/Session.cc.o -c /home/gaoguili/CLionProjects/muduo-agent/examples/memcached/server/Session.cc
 
 examples/memcached/server/CMakeFiles/memcached_footprint.dir/Session.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/memcached_footprint.dir/Session.cc.i"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/memcached/server && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/Desktop/muduo-1.0.1/examples/memcached/server/Session.cc > CMakeFiles/memcached_footprint.dir/Session.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/memcached/server && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/CLionProjects/muduo-agent/examples/memcached/server/Session.cc > CMakeFiles/memcached_footprint.dir/Session.cc.i
 
 examples/memcached/server/CMakeFiles/memcached_footprint.dir/Session.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/memcached_footprint.dir/Session.cc.s"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/memcached/server && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/Desktop/muduo-1.0.1/examples/memcached/server/Session.cc -o CMakeFiles/memcached_footprint.dir/Session.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/memcached/server && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/CLionProjects/muduo-agent/examples/memcached/server/Session.cc -o CMakeFiles/memcached_footprint.dir/Session.cc.s
 
 examples/memcached/server/CMakeFiles/memcached_footprint.dir/Session.cc.o.requires:
 
@@ -131,16 +131,16 @@ examples/memcached/server/CMakeFiles/memcached_footprint.dir/Session.cc.o.provid
 
 examples/memcached/server/CMakeFiles/memcached_footprint.dir/footprint_test.cc.o: examples/memcached/server/CMakeFiles/memcached_footprint.dir/flags.make
 examples/memcached/server/CMakeFiles/memcached_footprint.dir/footprint_test.cc.o: ../examples/memcached/server/footprint_test.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object examples/memcached/server/CMakeFiles/memcached_footprint.dir/footprint_test.cc.o"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/memcached/server && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/memcached_footprint.dir/footprint_test.cc.o -c /home/gaoguili/Desktop/muduo-1.0.1/examples/memcached/server/footprint_test.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object examples/memcached/server/CMakeFiles/memcached_footprint.dir/footprint_test.cc.o"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/memcached/server && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/memcached_footprint.dir/footprint_test.cc.o -c /home/gaoguili/CLionProjects/muduo-agent/examples/memcached/server/footprint_test.cc
 
 examples/memcached/server/CMakeFiles/memcached_footprint.dir/footprint_test.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/memcached_footprint.dir/footprint_test.cc.i"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/memcached/server && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/Desktop/muduo-1.0.1/examples/memcached/server/footprint_test.cc > CMakeFiles/memcached_footprint.dir/footprint_test.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/memcached/server && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/CLionProjects/muduo-agent/examples/memcached/server/footprint_test.cc > CMakeFiles/memcached_footprint.dir/footprint_test.cc.i
 
 examples/memcached/server/CMakeFiles/memcached_footprint.dir/footprint_test.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/memcached_footprint.dir/footprint_test.cc.s"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/memcached/server && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/Desktop/muduo-1.0.1/examples/memcached/server/footprint_test.cc -o CMakeFiles/memcached_footprint.dir/footprint_test.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/memcached/server && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/CLionProjects/muduo-agent/examples/memcached/server/footprint_test.cc -o CMakeFiles/memcached_footprint.dir/footprint_test.cc.s
 
 examples/memcached/server/CMakeFiles/memcached_footprint.dir/footprint_test.cc.o.requires:
 
@@ -174,8 +174,8 @@ bin/memcached_footprint: lib/libmuduo_http.a
 bin/memcached_footprint: lib/libmuduo_net.a
 bin/memcached_footprint: lib/libmuduo_base.a
 bin/memcached_footprint: examples/memcached/server/CMakeFiles/memcached_footprint.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ../../../bin/memcached_footprint"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/memcached/server && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/memcached_footprint.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ../../../bin/memcached_footprint"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/memcached/server && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/memcached_footprint.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/memcached/server/CMakeFiles/memcached_footprint.dir/build: bin/memcached_footprint
@@ -190,10 +190,10 @@ examples/memcached/server/CMakeFiles/memcached_footprint.dir/requires: examples/
 .PHONY : examples/memcached/server/CMakeFiles/memcached_footprint.dir/requires
 
 examples/memcached/server/CMakeFiles/memcached_footprint.dir/clean:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/memcached/server && $(CMAKE_COMMAND) -P CMakeFiles/memcached_footprint.dir/cmake_clean.cmake
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/memcached/server && $(CMAKE_COMMAND) -P CMakeFiles/memcached_footprint.dir/cmake_clean.cmake
 .PHONY : examples/memcached/server/CMakeFiles/memcached_footprint.dir/clean
 
 examples/memcached/server/CMakeFiles/memcached_footprint.dir/depend:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/Desktop/muduo-1.0.1 /home/gaoguili/Desktop/muduo-1.0.1/examples/memcached/server /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/memcached/server /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/memcached/server/CMakeFiles/memcached_footprint.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/CLionProjects/muduo-agent /home/gaoguili/CLionProjects/muduo-agent/examples/memcached/server /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/memcached/server /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/memcached/server/CMakeFiles/memcached_footprint.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/memcached/server/CMakeFiles/memcached_footprint.dir/depend
 

@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gaoguili/Desktop/muduo-1.0.1
+CMAKE_SOURCE_DIR = /home/gaoguili/CLionProjects/muduo-agent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include examples/filetransfer/CMakeFiles/filetransfer_download2.dir/depend.make
@@ -59,16 +59,16 @@ include examples/filetransfer/CMakeFiles/filetransfer_download2.dir/flags.make
 
 examples/filetransfer/CMakeFiles/filetransfer_download2.dir/download2.cc.o: examples/filetransfer/CMakeFiles/filetransfer_download2.dir/flags.make
 examples/filetransfer/CMakeFiles/filetransfer_download2.dir/download2.cc.o: ../examples/filetransfer/download2.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/filetransfer/CMakeFiles/filetransfer_download2.dir/download2.cc.o"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/filetransfer && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/filetransfer_download2.dir/download2.cc.o -c /home/gaoguili/Desktop/muduo-1.0.1/examples/filetransfer/download2.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/filetransfer/CMakeFiles/filetransfer_download2.dir/download2.cc.o"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/filetransfer && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/filetransfer_download2.dir/download2.cc.o -c /home/gaoguili/CLionProjects/muduo-agent/examples/filetransfer/download2.cc
 
 examples/filetransfer/CMakeFiles/filetransfer_download2.dir/download2.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/filetransfer_download2.dir/download2.cc.i"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/filetransfer && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/Desktop/muduo-1.0.1/examples/filetransfer/download2.cc > CMakeFiles/filetransfer_download2.dir/download2.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/filetransfer && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/CLionProjects/muduo-agent/examples/filetransfer/download2.cc > CMakeFiles/filetransfer_download2.dir/download2.cc.i
 
 examples/filetransfer/CMakeFiles/filetransfer_download2.dir/download2.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/filetransfer_download2.dir/download2.cc.s"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/filetransfer && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/Desktop/muduo-1.0.1/examples/filetransfer/download2.cc -o CMakeFiles/filetransfer_download2.dir/download2.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/filetransfer && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/CLionProjects/muduo-agent/examples/filetransfer/download2.cc -o CMakeFiles/filetransfer_download2.dir/download2.cc.s
 
 examples/filetransfer/CMakeFiles/filetransfer_download2.dir/download2.cc.o.requires:
 
@@ -93,8 +93,8 @@ bin/filetransfer_download2: examples/filetransfer/CMakeFiles/filetransfer_downlo
 bin/filetransfer_download2: lib/libmuduo_net.a
 bin/filetransfer_download2: lib/libmuduo_base.a
 bin/filetransfer_download2: examples/filetransfer/CMakeFiles/filetransfer_download2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/filetransfer_download2"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/filetransfer && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/filetransfer_download2.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/filetransfer_download2"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/filetransfer && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/filetransfer_download2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/filetransfer/CMakeFiles/filetransfer_download2.dir/build: bin/filetransfer_download2
@@ -106,10 +106,10 @@ examples/filetransfer/CMakeFiles/filetransfer_download2.dir/requires: examples/f
 .PHONY : examples/filetransfer/CMakeFiles/filetransfer_download2.dir/requires
 
 examples/filetransfer/CMakeFiles/filetransfer_download2.dir/clean:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/filetransfer && $(CMAKE_COMMAND) -P CMakeFiles/filetransfer_download2.dir/cmake_clean.cmake
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/filetransfer && $(CMAKE_COMMAND) -P CMakeFiles/filetransfer_download2.dir/cmake_clean.cmake
 .PHONY : examples/filetransfer/CMakeFiles/filetransfer_download2.dir/clean
 
 examples/filetransfer/CMakeFiles/filetransfer_download2.dir/depend:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/Desktop/muduo-1.0.1 /home/gaoguili/Desktop/muduo-1.0.1/examples/filetransfer /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/filetransfer /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/filetransfer/CMakeFiles/filetransfer_download2.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/CLionProjects/muduo-agent /home/gaoguili/CLionProjects/muduo-agent/examples/filetransfer /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/filetransfer /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/filetransfer/CMakeFiles/filetransfer_download2.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/filetransfer/CMakeFiles/filetransfer_download2.dir/depend
 

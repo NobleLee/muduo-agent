@@ -1,4 +1,4 @@
-# Install script for directory: /home/gaoguili/Desktop/muduo-1.0.1/muduo/net/protorpc
+# Install script for directory: /home/gaoguili/CLionProjects/muduo-agent/muduo/net/protorpc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,25 +38,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/lib/libmuduo_protorpc_wire.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/lib/libmuduo_protorpc_wire.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/lib/libmuduo_protorpc.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/lib/libmuduo_protorpc.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/lib/libmuduo_protorpc_wire_cpp11.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/lib/libmuduo_protorpc_wire_cpp11.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/muduo/net/protorpc" TYPE FILE FILES
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/net/protorpc/RpcCodec.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/net/protorpc/RpcChannel.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/net/protorpc/RpcServer.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/net/protorpc/rpc.proto"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/net/protorpc/rpcservice.proto"
-    "/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/protorpc/rpc.pb.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/net/protorpc/RpcCodec.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/net/protorpc/RpcChannel.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/net/protorpc/RpcServer.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/net/protorpc/rpc.proto"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/net/protorpc/rpcservice.proto"
+    "/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/protorpc/rpc.pb.h"
     )
 endif()
 

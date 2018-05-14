@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gaoguili/Desktop/muduo-1.0.1
+CMAKE_SOURCE_DIR = /home/gaoguili/CLionProjects/muduo-agent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/depend.make
@@ -59,16 +59,16 @@ include examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/flags.make
 
 examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/loadtest.cc.o: examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/flags.make
 examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/loadtest.cc.o: ../examples/asio/chat/loadtest.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/loadtest.cc.o"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/asio/chat && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/asio_chat_loadtest.dir/loadtest.cc.o -c /home/gaoguili/Desktop/muduo-1.0.1/examples/asio/chat/loadtest.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/loadtest.cc.o"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/asio/chat && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/asio_chat_loadtest.dir/loadtest.cc.o -c /home/gaoguili/CLionProjects/muduo-agent/examples/asio/chat/loadtest.cc
 
 examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/loadtest.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/asio_chat_loadtest.dir/loadtest.cc.i"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/asio/chat && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/Desktop/muduo-1.0.1/examples/asio/chat/loadtest.cc > CMakeFiles/asio_chat_loadtest.dir/loadtest.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/asio/chat && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/CLionProjects/muduo-agent/examples/asio/chat/loadtest.cc > CMakeFiles/asio_chat_loadtest.dir/loadtest.cc.i
 
 examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/loadtest.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/asio_chat_loadtest.dir/loadtest.cc.s"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/asio/chat && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/Desktop/muduo-1.0.1/examples/asio/chat/loadtest.cc -o CMakeFiles/asio_chat_loadtest.dir/loadtest.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/asio/chat && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/CLionProjects/muduo-agent/examples/asio/chat/loadtest.cc -o CMakeFiles/asio_chat_loadtest.dir/loadtest.cc.s
 
 examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/loadtest.cc.o.requires:
 
@@ -93,8 +93,8 @@ bin/asio_chat_loadtest: examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/bui
 bin/asio_chat_loadtest: lib/libmuduo_net.a
 bin/asio_chat_loadtest: lib/libmuduo_base.a
 bin/asio_chat_loadtest: examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../../bin/asio_chat_loadtest"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/asio/chat && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/asio_chat_loadtest.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../../bin/asio_chat_loadtest"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/asio/chat && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/asio_chat_loadtest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/build: bin/asio_chat_loadtest
@@ -106,10 +106,10 @@ examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/requires: examples/asio/cha
 .PHONY : examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/requires
 
 examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/clean:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/asio/chat && $(CMAKE_COMMAND) -P CMakeFiles/asio_chat_loadtest.dir/cmake_clean.cmake
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/asio/chat && $(CMAKE_COMMAND) -P CMakeFiles/asio_chat_loadtest.dir/cmake_clean.cmake
 .PHONY : examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/clean
 
 examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/depend:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/Desktop/muduo-1.0.1 /home/gaoguili/Desktop/muduo-1.0.1/examples/asio/chat /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/asio/chat /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/CLionProjects/muduo-agent /home/gaoguili/CLionProjects/muduo-agent/examples/asio/chat /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/asio/chat /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/depend
 

@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gaoguili/Desktop/muduo-1.0.1
+CMAKE_SOURCE_DIR = /home/gaoguili/CLionProjects/muduo-agent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,37 +59,37 @@ CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -105,7 +105,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -116,7 +116,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -126,14 +126,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/inspect/CMakeFiles/progress.marks
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/inspect/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles 0
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/inspect/CMakeFiles/progress.marks
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/inspect/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/inspect/clean
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/inspect/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/inspect/preinstall
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/inspect/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/inspect/preinstall
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/inspect/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 muduo/net/inspect/CMakeFiles/muduo_inspect.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/inspect/CMakeFiles/muduo_inspect.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/inspect/CMakeFiles/muduo_inspect.dir/rule
 .PHONY : muduo/net/inspect/CMakeFiles/muduo_inspect.dir/rule
 
 # Convenience name for target.
@@ -168,12 +168,12 @@ muduo_inspect: muduo/net/inspect/CMakeFiles/muduo_inspect.dir/rule
 
 # fast build rule for target.
 muduo_inspect/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build
 .PHONY : muduo_inspect/fast
 
 # Convenience name for target.
 muduo/net/inspect/CMakeFiles/inspector_test.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/inspect/CMakeFiles/inspector_test.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/inspect/CMakeFiles/inspector_test.dir/rule
 .PHONY : muduo/net/inspect/CMakeFiles/inspector_test.dir/rule
 
 # Convenience name for target.
@@ -183,7 +183,7 @@ inspector_test: muduo/net/inspect/CMakeFiles/inspector_test.dir/rule
 
 # fast build rule for target.
 inspector_test/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/inspector_test.dir/build.make muduo/net/inspect/CMakeFiles/inspector_test.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/inspector_test.dir/build.make muduo/net/inspect/CMakeFiles/inspector_test.dir/build
 .PHONY : inspector_test/fast
 
 Inspector.o: Inspector.cc.o
@@ -192,7 +192,7 @@ Inspector.o: Inspector.cc.o
 
 # target to build an object file
 Inspector.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/Inspector.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/Inspector.cc.o
 .PHONY : Inspector.cc.o
 
 Inspector.i: Inspector.cc.i
@@ -201,7 +201,7 @@ Inspector.i: Inspector.cc.i
 
 # target to preprocess a source file
 Inspector.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/Inspector.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/Inspector.cc.i
 .PHONY : Inspector.cc.i
 
 Inspector.s: Inspector.cc.s
@@ -210,7 +210,7 @@ Inspector.s: Inspector.cc.s
 
 # target to generate assembly for a file
 Inspector.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/Inspector.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/Inspector.cc.s
 .PHONY : Inspector.cc.s
 
 PerformanceInspector.o: PerformanceInspector.cc.o
@@ -219,7 +219,7 @@ PerformanceInspector.o: PerformanceInspector.cc.o
 
 # target to build an object file
 PerformanceInspector.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/PerformanceInspector.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/PerformanceInspector.cc.o
 .PHONY : PerformanceInspector.cc.o
 
 PerformanceInspector.i: PerformanceInspector.cc.i
@@ -228,7 +228,7 @@ PerformanceInspector.i: PerformanceInspector.cc.i
 
 # target to preprocess a source file
 PerformanceInspector.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/PerformanceInspector.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/PerformanceInspector.cc.i
 .PHONY : PerformanceInspector.cc.i
 
 PerformanceInspector.s: PerformanceInspector.cc.s
@@ -237,7 +237,7 @@ PerformanceInspector.s: PerformanceInspector.cc.s
 
 # target to generate assembly for a file
 PerformanceInspector.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/PerformanceInspector.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/PerformanceInspector.cc.s
 .PHONY : PerformanceInspector.cc.s
 
 ProcessInspector.o: ProcessInspector.cc.o
@@ -246,7 +246,7 @@ ProcessInspector.o: ProcessInspector.cc.o
 
 # target to build an object file
 ProcessInspector.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/ProcessInspector.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/ProcessInspector.cc.o
 .PHONY : ProcessInspector.cc.o
 
 ProcessInspector.i: ProcessInspector.cc.i
@@ -255,7 +255,7 @@ ProcessInspector.i: ProcessInspector.cc.i
 
 # target to preprocess a source file
 ProcessInspector.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/ProcessInspector.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/ProcessInspector.cc.i
 .PHONY : ProcessInspector.cc.i
 
 ProcessInspector.s: ProcessInspector.cc.s
@@ -264,7 +264,7 @@ ProcessInspector.s: ProcessInspector.cc.s
 
 # target to generate assembly for a file
 ProcessInspector.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/ProcessInspector.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/ProcessInspector.cc.s
 .PHONY : ProcessInspector.cc.s
 
 SystemInspector.o: SystemInspector.cc.o
@@ -273,7 +273,7 @@ SystemInspector.o: SystemInspector.cc.o
 
 # target to build an object file
 SystemInspector.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/SystemInspector.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/SystemInspector.cc.o
 .PHONY : SystemInspector.cc.o
 
 SystemInspector.i: SystemInspector.cc.i
@@ -282,7 +282,7 @@ SystemInspector.i: SystemInspector.cc.i
 
 # target to preprocess a source file
 SystemInspector.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/SystemInspector.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/SystemInspector.cc.i
 .PHONY : SystemInspector.cc.i
 
 SystemInspector.s: SystemInspector.cc.s
@@ -291,7 +291,7 @@ SystemInspector.s: SystemInspector.cc.s
 
 # target to generate assembly for a file
 SystemInspector.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/SystemInspector.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/SystemInspector.cc.s
 .PHONY : SystemInspector.cc.s
 
 tests/Inspector_test.o: tests/Inspector_test.cc.o
@@ -300,7 +300,7 @@ tests/Inspector_test.o: tests/Inspector_test.cc.o
 
 # target to build an object file
 tests/Inspector_test.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/inspector_test.dir/build.make muduo/net/inspect/CMakeFiles/inspector_test.dir/tests/Inspector_test.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/inspector_test.dir/build.make muduo/net/inspect/CMakeFiles/inspector_test.dir/tests/Inspector_test.cc.o
 .PHONY : tests/Inspector_test.cc.o
 
 tests/Inspector_test.i: tests/Inspector_test.cc.i
@@ -309,7 +309,7 @@ tests/Inspector_test.i: tests/Inspector_test.cc.i
 
 # target to preprocess a source file
 tests/Inspector_test.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/inspector_test.dir/build.make muduo/net/inspect/CMakeFiles/inspector_test.dir/tests/Inspector_test.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/inspector_test.dir/build.make muduo/net/inspect/CMakeFiles/inspector_test.dir/tests/Inspector_test.cc.i
 .PHONY : tests/Inspector_test.cc.i
 
 tests/Inspector_test.s: tests/Inspector_test.cc.s
@@ -318,7 +318,7 @@ tests/Inspector_test.s: tests/Inspector_test.cc.s
 
 # target to generate assembly for a file
 tests/Inspector_test.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/inspector_test.dir/build.make muduo/net/inspect/CMakeFiles/inspector_test.dir/tests/Inspector_test.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/inspect/CMakeFiles/inspector_test.dir/build.make muduo/net/inspect/CMakeFiles/inspector_test.dir/tests/Inspector_test.cc.s
 .PHONY : tests/Inspector_test.cc.s
 
 # Help Target
@@ -361,6 +361,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

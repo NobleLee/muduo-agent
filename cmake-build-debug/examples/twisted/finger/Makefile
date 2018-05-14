@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gaoguili/Desktop/muduo-1.0.1
+CMAKE_SOURCE_DIR = /home/gaoguili/CLionProjects/muduo-agent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,31 +59,31 @@ CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -94,7 +94,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -105,13 +105,13 @@ edit_cache/fast: edit_cache
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target list_install_components
@@ -126,14 +126,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/twisted/finger/CMakeFiles/progress.marks
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles 0
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/twisted/finger/CMakeFiles/progress.marks
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/clean
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/preinstall
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/preinstall
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 examples/twisted/finger/CMakeFiles/twisted_finger03.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/CMakeFiles/twisted_finger03.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/CMakeFiles/twisted_finger03.dir/rule
 .PHONY : examples/twisted/finger/CMakeFiles/twisted_finger03.dir/rule
 
 # Convenience name for target.
@@ -168,12 +168,12 @@ twisted_finger03: examples/twisted/finger/CMakeFiles/twisted_finger03.dir/rule
 
 # fast build rule for target.
 twisted_finger03/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger03.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger03.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger03.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger03.dir/build
 .PHONY : twisted_finger03/fast
 
 # Convenience name for target.
 examples/twisted/finger/CMakeFiles/twisted_finger01.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/CMakeFiles/twisted_finger01.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/CMakeFiles/twisted_finger01.dir/rule
 .PHONY : examples/twisted/finger/CMakeFiles/twisted_finger01.dir/rule
 
 # Convenience name for target.
@@ -183,12 +183,12 @@ twisted_finger01: examples/twisted/finger/CMakeFiles/twisted_finger01.dir/rule
 
 # fast build rule for target.
 twisted_finger01/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger01.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger01.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger01.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger01.dir/build
 .PHONY : twisted_finger01/fast
 
 # Convenience name for target.
 examples/twisted/finger/CMakeFiles/twisted_finger02.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/CMakeFiles/twisted_finger02.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/CMakeFiles/twisted_finger02.dir/rule
 .PHONY : examples/twisted/finger/CMakeFiles/twisted_finger02.dir/rule
 
 # Convenience name for target.
@@ -198,12 +198,12 @@ twisted_finger02: examples/twisted/finger/CMakeFiles/twisted_finger02.dir/rule
 
 # fast build rule for target.
 twisted_finger02/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger02.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger02.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger02.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger02.dir/build
 .PHONY : twisted_finger02/fast
 
 # Convenience name for target.
 examples/twisted/finger/CMakeFiles/twisted_finger04.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/CMakeFiles/twisted_finger04.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/CMakeFiles/twisted_finger04.dir/rule
 .PHONY : examples/twisted/finger/CMakeFiles/twisted_finger04.dir/rule
 
 # Convenience name for target.
@@ -213,12 +213,12 @@ twisted_finger04: examples/twisted/finger/CMakeFiles/twisted_finger04.dir/rule
 
 # fast build rule for target.
 twisted_finger04/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger04.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger04.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger04.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger04.dir/build
 .PHONY : twisted_finger04/fast
 
 # Convenience name for target.
 examples/twisted/finger/CMakeFiles/twisted_finger07.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/CMakeFiles/twisted_finger07.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/CMakeFiles/twisted_finger07.dir/rule
 .PHONY : examples/twisted/finger/CMakeFiles/twisted_finger07.dir/rule
 
 # Convenience name for target.
@@ -228,12 +228,12 @@ twisted_finger07: examples/twisted/finger/CMakeFiles/twisted_finger07.dir/rule
 
 # fast build rule for target.
 twisted_finger07/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger07.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger07.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger07.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger07.dir/build
 .PHONY : twisted_finger07/fast
 
 # Convenience name for target.
 examples/twisted/finger/CMakeFiles/twisted_finger05.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/CMakeFiles/twisted_finger05.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/CMakeFiles/twisted_finger05.dir/rule
 .PHONY : examples/twisted/finger/CMakeFiles/twisted_finger05.dir/rule
 
 # Convenience name for target.
@@ -243,12 +243,12 @@ twisted_finger05: examples/twisted/finger/CMakeFiles/twisted_finger05.dir/rule
 
 # fast build rule for target.
 twisted_finger05/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger05.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger05.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger05.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger05.dir/build
 .PHONY : twisted_finger05/fast
 
 # Convenience name for target.
 examples/twisted/finger/CMakeFiles/twisted_finger06.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/CMakeFiles/twisted_finger06.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/CMakeFiles/twisted_finger06.dir/rule
 .PHONY : examples/twisted/finger/CMakeFiles/twisted_finger06.dir/rule
 
 # Convenience name for target.
@@ -258,7 +258,7 @@ twisted_finger06: examples/twisted/finger/CMakeFiles/twisted_finger06.dir/rule
 
 # fast build rule for target.
 twisted_finger06/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger06.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger06.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger06.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger06.dir/build
 .PHONY : twisted_finger06/fast
 
 finger01.o: finger01.cc.o
@@ -267,7 +267,7 @@ finger01.o: finger01.cc.o
 
 # target to build an object file
 finger01.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger01.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger01.dir/finger01.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger01.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger01.dir/finger01.cc.o
 .PHONY : finger01.cc.o
 
 finger01.i: finger01.cc.i
@@ -276,7 +276,7 @@ finger01.i: finger01.cc.i
 
 # target to preprocess a source file
 finger01.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger01.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger01.dir/finger01.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger01.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger01.dir/finger01.cc.i
 .PHONY : finger01.cc.i
 
 finger01.s: finger01.cc.s
@@ -285,7 +285,7 @@ finger01.s: finger01.cc.s
 
 # target to generate assembly for a file
 finger01.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger01.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger01.dir/finger01.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger01.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger01.dir/finger01.cc.s
 .PHONY : finger01.cc.s
 
 finger02.o: finger02.cc.o
@@ -294,7 +294,7 @@ finger02.o: finger02.cc.o
 
 # target to build an object file
 finger02.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger02.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger02.dir/finger02.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger02.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger02.dir/finger02.cc.o
 .PHONY : finger02.cc.o
 
 finger02.i: finger02.cc.i
@@ -303,7 +303,7 @@ finger02.i: finger02.cc.i
 
 # target to preprocess a source file
 finger02.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger02.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger02.dir/finger02.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger02.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger02.dir/finger02.cc.i
 .PHONY : finger02.cc.i
 
 finger02.s: finger02.cc.s
@@ -312,7 +312,7 @@ finger02.s: finger02.cc.s
 
 # target to generate assembly for a file
 finger02.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger02.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger02.dir/finger02.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger02.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger02.dir/finger02.cc.s
 .PHONY : finger02.cc.s
 
 finger03.o: finger03.cc.o
@@ -321,7 +321,7 @@ finger03.o: finger03.cc.o
 
 # target to build an object file
 finger03.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger03.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger03.dir/finger03.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger03.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger03.dir/finger03.cc.o
 .PHONY : finger03.cc.o
 
 finger03.i: finger03.cc.i
@@ -330,7 +330,7 @@ finger03.i: finger03.cc.i
 
 # target to preprocess a source file
 finger03.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger03.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger03.dir/finger03.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger03.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger03.dir/finger03.cc.i
 .PHONY : finger03.cc.i
 
 finger03.s: finger03.cc.s
@@ -339,7 +339,7 @@ finger03.s: finger03.cc.s
 
 # target to generate assembly for a file
 finger03.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger03.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger03.dir/finger03.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger03.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger03.dir/finger03.cc.s
 .PHONY : finger03.cc.s
 
 finger04.o: finger04.cc.o
@@ -348,7 +348,7 @@ finger04.o: finger04.cc.o
 
 # target to build an object file
 finger04.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger04.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger04.dir/finger04.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger04.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger04.dir/finger04.cc.o
 .PHONY : finger04.cc.o
 
 finger04.i: finger04.cc.i
@@ -357,7 +357,7 @@ finger04.i: finger04.cc.i
 
 # target to preprocess a source file
 finger04.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger04.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger04.dir/finger04.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger04.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger04.dir/finger04.cc.i
 .PHONY : finger04.cc.i
 
 finger04.s: finger04.cc.s
@@ -366,7 +366,7 @@ finger04.s: finger04.cc.s
 
 # target to generate assembly for a file
 finger04.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger04.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger04.dir/finger04.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger04.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger04.dir/finger04.cc.s
 .PHONY : finger04.cc.s
 
 finger05.o: finger05.cc.o
@@ -375,7 +375,7 @@ finger05.o: finger05.cc.o
 
 # target to build an object file
 finger05.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger05.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger05.dir/finger05.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger05.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger05.dir/finger05.cc.o
 .PHONY : finger05.cc.o
 
 finger05.i: finger05.cc.i
@@ -384,7 +384,7 @@ finger05.i: finger05.cc.i
 
 # target to preprocess a source file
 finger05.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger05.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger05.dir/finger05.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger05.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger05.dir/finger05.cc.i
 .PHONY : finger05.cc.i
 
 finger05.s: finger05.cc.s
@@ -393,7 +393,7 @@ finger05.s: finger05.cc.s
 
 # target to generate assembly for a file
 finger05.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger05.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger05.dir/finger05.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger05.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger05.dir/finger05.cc.s
 .PHONY : finger05.cc.s
 
 finger06.o: finger06.cc.o
@@ -402,7 +402,7 @@ finger06.o: finger06.cc.o
 
 # target to build an object file
 finger06.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger06.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger06.dir/finger06.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger06.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger06.dir/finger06.cc.o
 .PHONY : finger06.cc.o
 
 finger06.i: finger06.cc.i
@@ -411,7 +411,7 @@ finger06.i: finger06.cc.i
 
 # target to preprocess a source file
 finger06.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger06.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger06.dir/finger06.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger06.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger06.dir/finger06.cc.i
 .PHONY : finger06.cc.i
 
 finger06.s: finger06.cc.s
@@ -420,7 +420,7 @@ finger06.s: finger06.cc.s
 
 # target to generate assembly for a file
 finger06.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger06.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger06.dir/finger06.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger06.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger06.dir/finger06.cc.s
 .PHONY : finger06.cc.s
 
 finger07.o: finger07.cc.o
@@ -429,7 +429,7 @@ finger07.o: finger07.cc.o
 
 # target to build an object file
 finger07.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger07.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger07.dir/finger07.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger07.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger07.dir/finger07.cc.o
 .PHONY : finger07.cc.o
 
 finger07.i: finger07.cc.i
@@ -438,7 +438,7 @@ finger07.i: finger07.cc.i
 
 # target to preprocess a source file
 finger07.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger07.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger07.dir/finger07.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger07.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger07.dir/finger07.cc.i
 .PHONY : finger07.cc.i
 
 finger07.s: finger07.cc.s
@@ -447,7 +447,7 @@ finger07.s: finger07.cc.s
 
 # target to generate assembly for a file
 finger07.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger07.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger07.dir/finger07.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger07.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger07.dir/finger07.cc.s
 .PHONY : finger07.cc.s
 
 # Help Target
@@ -501,6 +501,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

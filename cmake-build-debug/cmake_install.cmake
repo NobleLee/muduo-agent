@@ -1,4 +1,4 @@
-# Install script for directory: /home/gaoguili/Desktop/muduo-1.0.1
+# Install script for directory: /home/gaoguili/CLionProjects/muduo-agent
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/base/cmake_install.cmake")
-  include("/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/cmake_install.cmake")
-  include("/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/cmake_install.cmake")
+  include("/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/base/cmake_install.cmake")
+  include("/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/cmake_install.cmake")
+  include("/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/cmake_install.cmake")
 
 endif()
 
@@ -53,5 +53,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

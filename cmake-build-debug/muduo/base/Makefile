@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gaoguili/Desktop/muduo-1.0.1
+CMAKE_SOURCE_DIR = /home/gaoguili/CLionProjects/muduo-agent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,37 +59,37 @@ CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -105,7 +105,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -116,7 +116,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -126,14 +126,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/base/CMakeFiles/progress.marks
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles 0
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/base/CMakeFiles/progress.marks
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/clean
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/preinstall
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/preinstall
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 muduo/base/CMakeFiles/muduo_base_cpp11.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/CMakeFiles/muduo_base_cpp11.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/CMakeFiles/muduo_base_cpp11.dir/rule
 .PHONY : muduo/base/CMakeFiles/muduo_base_cpp11.dir/rule
 
 # Convenience name for target.
@@ -168,12 +168,12 @@ muduo_base_cpp11: muduo/base/CMakeFiles/muduo_base_cpp11.dir/rule
 
 # fast build rule for target.
 muduo_base_cpp11/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/build
 .PHONY : muduo_base_cpp11/fast
 
 # Convenience name for target.
 muduo/base/CMakeFiles/muduo_base.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/CMakeFiles/muduo_base.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/base/CMakeFiles/muduo_base.dir/rule
 .PHONY : muduo/base/CMakeFiles/muduo_base.dir/rule
 
 # Convenience name for target.
@@ -183,7 +183,7 @@ muduo_base: muduo/base/CMakeFiles/muduo_base.dir/rule
 
 # fast build rule for target.
 muduo_base/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/build
 .PHONY : muduo_base/fast
 
 AsyncLogging.o: AsyncLogging.cc.o
@@ -192,8 +192,8 @@ AsyncLogging.o: AsyncLogging.cc.o
 
 # target to build an object file
 AsyncLogging.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/AsyncLogging.cc.o
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/AsyncLogging.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/AsyncLogging.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/AsyncLogging.cc.o
 .PHONY : AsyncLogging.cc.o
 
 AsyncLogging.i: AsyncLogging.cc.i
@@ -202,8 +202,8 @@ AsyncLogging.i: AsyncLogging.cc.i
 
 # target to preprocess a source file
 AsyncLogging.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/AsyncLogging.cc.i
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/AsyncLogging.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/AsyncLogging.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/AsyncLogging.cc.i
 .PHONY : AsyncLogging.cc.i
 
 AsyncLogging.s: AsyncLogging.cc.s
@@ -212,8 +212,8 @@ AsyncLogging.s: AsyncLogging.cc.s
 
 # target to generate assembly for a file
 AsyncLogging.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/AsyncLogging.cc.s
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/AsyncLogging.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/AsyncLogging.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/AsyncLogging.cc.s
 .PHONY : AsyncLogging.cc.s
 
 Condition.o: Condition.cc.o
@@ -222,8 +222,8 @@ Condition.o: Condition.cc.o
 
 # target to build an object file
 Condition.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Condition.cc.o
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Condition.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Condition.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Condition.cc.o
 .PHONY : Condition.cc.o
 
 Condition.i: Condition.cc.i
@@ -232,8 +232,8 @@ Condition.i: Condition.cc.i
 
 # target to preprocess a source file
 Condition.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Condition.cc.i
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Condition.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Condition.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Condition.cc.i
 .PHONY : Condition.cc.i
 
 Condition.s: Condition.cc.s
@@ -242,8 +242,8 @@ Condition.s: Condition.cc.s
 
 # target to generate assembly for a file
 Condition.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Condition.cc.s
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Condition.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Condition.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Condition.cc.s
 .PHONY : Condition.cc.s
 
 CountDownLatch.o: CountDownLatch.cc.o
@@ -252,8 +252,8 @@ CountDownLatch.o: CountDownLatch.cc.o
 
 # target to build an object file
 CountDownLatch.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/CountDownLatch.cc.o
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/CountDownLatch.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/CountDownLatch.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/CountDownLatch.cc.o
 .PHONY : CountDownLatch.cc.o
 
 CountDownLatch.i: CountDownLatch.cc.i
@@ -262,8 +262,8 @@ CountDownLatch.i: CountDownLatch.cc.i
 
 # target to preprocess a source file
 CountDownLatch.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/CountDownLatch.cc.i
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/CountDownLatch.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/CountDownLatch.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/CountDownLatch.cc.i
 .PHONY : CountDownLatch.cc.i
 
 CountDownLatch.s: CountDownLatch.cc.s
@@ -272,8 +272,8 @@ CountDownLatch.s: CountDownLatch.cc.s
 
 # target to generate assembly for a file
 CountDownLatch.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/CountDownLatch.cc.s
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/CountDownLatch.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/CountDownLatch.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/CountDownLatch.cc.s
 .PHONY : CountDownLatch.cc.s
 
 Date.o: Date.cc.o
@@ -282,8 +282,8 @@ Date.o: Date.cc.o
 
 # target to build an object file
 Date.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Date.cc.o
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Date.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Date.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Date.cc.o
 .PHONY : Date.cc.o
 
 Date.i: Date.cc.i
@@ -292,8 +292,8 @@ Date.i: Date.cc.i
 
 # target to preprocess a source file
 Date.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Date.cc.i
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Date.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Date.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Date.cc.i
 .PHONY : Date.cc.i
 
 Date.s: Date.cc.s
@@ -302,8 +302,8 @@ Date.s: Date.cc.s
 
 # target to generate assembly for a file
 Date.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Date.cc.s
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Date.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Date.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Date.cc.s
 .PHONY : Date.cc.s
 
 Exception.o: Exception.cc.o
@@ -312,8 +312,8 @@ Exception.o: Exception.cc.o
 
 # target to build an object file
 Exception.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Exception.cc.o
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Exception.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Exception.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Exception.cc.o
 .PHONY : Exception.cc.o
 
 Exception.i: Exception.cc.i
@@ -322,8 +322,8 @@ Exception.i: Exception.cc.i
 
 # target to preprocess a source file
 Exception.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Exception.cc.i
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Exception.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Exception.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Exception.cc.i
 .PHONY : Exception.cc.i
 
 Exception.s: Exception.cc.s
@@ -332,8 +332,8 @@ Exception.s: Exception.cc.s
 
 # target to generate assembly for a file
 Exception.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Exception.cc.s
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Exception.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Exception.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Exception.cc.s
 .PHONY : Exception.cc.s
 
 FileUtil.o: FileUtil.cc.o
@@ -342,8 +342,8 @@ FileUtil.o: FileUtil.cc.o
 
 # target to build an object file
 FileUtil.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/FileUtil.cc.o
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/FileUtil.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/FileUtil.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/FileUtil.cc.o
 .PHONY : FileUtil.cc.o
 
 FileUtil.i: FileUtil.cc.i
@@ -352,8 +352,8 @@ FileUtil.i: FileUtil.cc.i
 
 # target to preprocess a source file
 FileUtil.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/FileUtil.cc.i
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/FileUtil.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/FileUtil.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/FileUtil.cc.i
 .PHONY : FileUtil.cc.i
 
 FileUtil.s: FileUtil.cc.s
@@ -362,8 +362,8 @@ FileUtil.s: FileUtil.cc.s
 
 # target to generate assembly for a file
 FileUtil.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/FileUtil.cc.s
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/FileUtil.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/FileUtil.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/FileUtil.cc.s
 .PHONY : FileUtil.cc.s
 
 LogFile.o: LogFile.cc.o
@@ -372,8 +372,8 @@ LogFile.o: LogFile.cc.o
 
 # target to build an object file
 LogFile.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/LogFile.cc.o
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/LogFile.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/LogFile.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/LogFile.cc.o
 .PHONY : LogFile.cc.o
 
 LogFile.i: LogFile.cc.i
@@ -382,8 +382,8 @@ LogFile.i: LogFile.cc.i
 
 # target to preprocess a source file
 LogFile.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/LogFile.cc.i
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/LogFile.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/LogFile.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/LogFile.cc.i
 .PHONY : LogFile.cc.i
 
 LogFile.s: LogFile.cc.s
@@ -392,8 +392,8 @@ LogFile.s: LogFile.cc.s
 
 # target to generate assembly for a file
 LogFile.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/LogFile.cc.s
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/LogFile.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/LogFile.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/LogFile.cc.s
 .PHONY : LogFile.cc.s
 
 LogStream.o: LogStream.cc.o
@@ -402,8 +402,8 @@ LogStream.o: LogStream.cc.o
 
 # target to build an object file
 LogStream.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/LogStream.cc.o
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/LogStream.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/LogStream.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/LogStream.cc.o
 .PHONY : LogStream.cc.o
 
 LogStream.i: LogStream.cc.i
@@ -412,8 +412,8 @@ LogStream.i: LogStream.cc.i
 
 # target to preprocess a source file
 LogStream.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/LogStream.cc.i
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/LogStream.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/LogStream.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/LogStream.cc.i
 .PHONY : LogStream.cc.i
 
 LogStream.s: LogStream.cc.s
@@ -422,8 +422,8 @@ LogStream.s: LogStream.cc.s
 
 # target to generate assembly for a file
 LogStream.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/LogStream.cc.s
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/LogStream.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/LogStream.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/LogStream.cc.s
 .PHONY : LogStream.cc.s
 
 Logging.o: Logging.cc.o
@@ -432,8 +432,8 @@ Logging.o: Logging.cc.o
 
 # target to build an object file
 Logging.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Logging.cc.o
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Logging.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Logging.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Logging.cc.o
 .PHONY : Logging.cc.o
 
 Logging.i: Logging.cc.i
@@ -442,8 +442,8 @@ Logging.i: Logging.cc.i
 
 # target to preprocess a source file
 Logging.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Logging.cc.i
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Logging.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Logging.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Logging.cc.i
 .PHONY : Logging.cc.i
 
 Logging.s: Logging.cc.s
@@ -452,8 +452,8 @@ Logging.s: Logging.cc.s
 
 # target to generate assembly for a file
 Logging.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Logging.cc.s
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Logging.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Logging.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Logging.cc.s
 .PHONY : Logging.cc.s
 
 ProcessInfo.o: ProcessInfo.cc.o
@@ -462,8 +462,8 @@ ProcessInfo.o: ProcessInfo.cc.o
 
 # target to build an object file
 ProcessInfo.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/ProcessInfo.cc.o
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/ProcessInfo.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/ProcessInfo.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/ProcessInfo.cc.o
 .PHONY : ProcessInfo.cc.o
 
 ProcessInfo.i: ProcessInfo.cc.i
@@ -472,8 +472,8 @@ ProcessInfo.i: ProcessInfo.cc.i
 
 # target to preprocess a source file
 ProcessInfo.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/ProcessInfo.cc.i
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/ProcessInfo.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/ProcessInfo.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/ProcessInfo.cc.i
 .PHONY : ProcessInfo.cc.i
 
 ProcessInfo.s: ProcessInfo.cc.s
@@ -482,8 +482,8 @@ ProcessInfo.s: ProcessInfo.cc.s
 
 # target to generate assembly for a file
 ProcessInfo.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/ProcessInfo.cc.s
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/ProcessInfo.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/ProcessInfo.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/ProcessInfo.cc.s
 .PHONY : ProcessInfo.cc.s
 
 Thread.o: Thread.cc.o
@@ -492,8 +492,8 @@ Thread.o: Thread.cc.o
 
 # target to build an object file
 Thread.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Thread.cc.o
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Thread.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Thread.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Thread.cc.o
 .PHONY : Thread.cc.o
 
 Thread.i: Thread.cc.i
@@ -502,8 +502,8 @@ Thread.i: Thread.cc.i
 
 # target to preprocess a source file
 Thread.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Thread.cc.i
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Thread.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Thread.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Thread.cc.i
 .PHONY : Thread.cc.i
 
 Thread.s: Thread.cc.s
@@ -512,8 +512,8 @@ Thread.s: Thread.cc.s
 
 # target to generate assembly for a file
 Thread.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Thread.cc.s
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Thread.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Thread.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Thread.cc.s
 .PHONY : Thread.cc.s
 
 ThreadPool.o: ThreadPool.cc.o
@@ -522,8 +522,8 @@ ThreadPool.o: ThreadPool.cc.o
 
 # target to build an object file
 ThreadPool.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/ThreadPool.cc.o
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/ThreadPool.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/ThreadPool.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/ThreadPool.cc.o
 .PHONY : ThreadPool.cc.o
 
 ThreadPool.i: ThreadPool.cc.i
@@ -532,8 +532,8 @@ ThreadPool.i: ThreadPool.cc.i
 
 # target to preprocess a source file
 ThreadPool.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/ThreadPool.cc.i
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/ThreadPool.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/ThreadPool.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/ThreadPool.cc.i
 .PHONY : ThreadPool.cc.i
 
 ThreadPool.s: ThreadPool.cc.s
@@ -542,8 +542,8 @@ ThreadPool.s: ThreadPool.cc.s
 
 # target to generate assembly for a file
 ThreadPool.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/ThreadPool.cc.s
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/ThreadPool.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/ThreadPool.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/ThreadPool.cc.s
 .PHONY : ThreadPool.cc.s
 
 TimeZone.o: TimeZone.cc.o
@@ -552,8 +552,8 @@ TimeZone.o: TimeZone.cc.o
 
 # target to build an object file
 TimeZone.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/TimeZone.cc.o
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/TimeZone.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/TimeZone.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/TimeZone.cc.o
 .PHONY : TimeZone.cc.o
 
 TimeZone.i: TimeZone.cc.i
@@ -562,8 +562,8 @@ TimeZone.i: TimeZone.cc.i
 
 # target to preprocess a source file
 TimeZone.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/TimeZone.cc.i
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/TimeZone.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/TimeZone.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/TimeZone.cc.i
 .PHONY : TimeZone.cc.i
 
 TimeZone.s: TimeZone.cc.s
@@ -572,8 +572,8 @@ TimeZone.s: TimeZone.cc.s
 
 # target to generate assembly for a file
 TimeZone.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/TimeZone.cc.s
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/TimeZone.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/TimeZone.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/TimeZone.cc.s
 .PHONY : TimeZone.cc.s
 
 Timestamp.o: Timestamp.cc.o
@@ -582,8 +582,8 @@ Timestamp.o: Timestamp.cc.o
 
 # target to build an object file
 Timestamp.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Timestamp.cc.o
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Timestamp.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Timestamp.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Timestamp.cc.o
 .PHONY : Timestamp.cc.o
 
 Timestamp.i: Timestamp.cc.i
@@ -592,8 +592,8 @@ Timestamp.i: Timestamp.cc.i
 
 # target to preprocess a source file
 Timestamp.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Timestamp.cc.i
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Timestamp.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Timestamp.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Timestamp.cc.i
 .PHONY : Timestamp.cc.i
 
 Timestamp.s: Timestamp.cc.s
@@ -602,8 +602,8 @@ Timestamp.s: Timestamp.cc.s
 
 # target to generate assembly for a file
 Timestamp.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Timestamp.cc.s
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Timestamp.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base_cpp11.dir/build.make muduo/base/CMakeFiles/muduo_base_cpp11.dir/Timestamp.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/base/CMakeFiles/muduo_base.dir/build.make muduo/base/CMakeFiles/muduo_base.dir/Timestamp.cc.s
 .PHONY : Timestamp.cc.s
 
 # Help Target
@@ -673,6 +673,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gaoguili/Desktop/muduo-1.0.1
+CMAKE_SOURCE_DIR = /home/gaoguili/CLionProjects/muduo-agent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include examples/simple/CMakeFiles/simple_chargen.dir/depend.make
@@ -59,16 +59,16 @@ include examples/simple/CMakeFiles/simple_chargen.dir/flags.make
 
 examples/simple/CMakeFiles/simple_chargen.dir/chargen/chargen.cc.o: examples/simple/CMakeFiles/simple_chargen.dir/flags.make
 examples/simple/CMakeFiles/simple_chargen.dir/chargen/chargen.cc.o: ../examples/simple/chargen/chargen.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/simple/CMakeFiles/simple_chargen.dir/chargen/chargen.cc.o"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/simple && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simple_chargen.dir/chargen/chargen.cc.o -c /home/gaoguili/Desktop/muduo-1.0.1/examples/simple/chargen/chargen.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/simple/CMakeFiles/simple_chargen.dir/chargen/chargen.cc.o"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/simple && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simple_chargen.dir/chargen/chargen.cc.o -c /home/gaoguili/CLionProjects/muduo-agent/examples/simple/chargen/chargen.cc
 
 examples/simple/CMakeFiles/simple_chargen.dir/chargen/chargen.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_chargen.dir/chargen/chargen.cc.i"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/simple && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/Desktop/muduo-1.0.1/examples/simple/chargen/chargen.cc > CMakeFiles/simple_chargen.dir/chargen/chargen.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/simple && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/CLionProjects/muduo-agent/examples/simple/chargen/chargen.cc > CMakeFiles/simple_chargen.dir/chargen/chargen.cc.i
 
 examples/simple/CMakeFiles/simple_chargen.dir/chargen/chargen.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_chargen.dir/chargen/chargen.cc.s"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/simple && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/Desktop/muduo-1.0.1/examples/simple/chargen/chargen.cc -o CMakeFiles/simple_chargen.dir/chargen/chargen.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/simple && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/CLionProjects/muduo-agent/examples/simple/chargen/chargen.cc -o CMakeFiles/simple_chargen.dir/chargen/chargen.cc.s
 
 examples/simple/CMakeFiles/simple_chargen.dir/chargen/chargen.cc.o.requires:
 
@@ -83,16 +83,16 @@ examples/simple/CMakeFiles/simple_chargen.dir/chargen/chargen.cc.o.provides.buil
 
 examples/simple/CMakeFiles/simple_chargen.dir/chargen/main.cc.o: examples/simple/CMakeFiles/simple_chargen.dir/flags.make
 examples/simple/CMakeFiles/simple_chargen.dir/chargen/main.cc.o: ../examples/simple/chargen/main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object examples/simple/CMakeFiles/simple_chargen.dir/chargen/main.cc.o"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/simple && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simple_chargen.dir/chargen/main.cc.o -c /home/gaoguili/Desktop/muduo-1.0.1/examples/simple/chargen/main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object examples/simple/CMakeFiles/simple_chargen.dir/chargen/main.cc.o"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/simple && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simple_chargen.dir/chargen/main.cc.o -c /home/gaoguili/CLionProjects/muduo-agent/examples/simple/chargen/main.cc
 
 examples/simple/CMakeFiles/simple_chargen.dir/chargen/main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simple_chargen.dir/chargen/main.cc.i"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/simple && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/Desktop/muduo-1.0.1/examples/simple/chargen/main.cc > CMakeFiles/simple_chargen.dir/chargen/main.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/simple && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/CLionProjects/muduo-agent/examples/simple/chargen/main.cc > CMakeFiles/simple_chargen.dir/chargen/main.cc.i
 
 examples/simple/CMakeFiles/simple_chargen.dir/chargen/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simple_chargen.dir/chargen/main.cc.s"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/simple && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/Desktop/muduo-1.0.1/examples/simple/chargen/main.cc -o CMakeFiles/simple_chargen.dir/chargen/main.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/simple && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/CLionProjects/muduo-agent/examples/simple/chargen/main.cc -o CMakeFiles/simple_chargen.dir/chargen/main.cc.s
 
 examples/simple/CMakeFiles/simple_chargen.dir/chargen/main.cc.o.requires:
 
@@ -119,8 +119,8 @@ bin/simple_chargen: examples/simple/CMakeFiles/simple_chargen.dir/build.make
 bin/simple_chargen: lib/libmuduo_net.a
 bin/simple_chargen: lib/libmuduo_base.a
 bin/simple_chargen: examples/simple/CMakeFiles/simple_chargen.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../bin/simple_chargen"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/simple && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/simple_chargen.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../bin/simple_chargen"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/simple && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/simple_chargen.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/simple/CMakeFiles/simple_chargen.dir/build: bin/simple_chargen
@@ -133,10 +133,10 @@ examples/simple/CMakeFiles/simple_chargen.dir/requires: examples/simple/CMakeFil
 .PHONY : examples/simple/CMakeFiles/simple_chargen.dir/requires
 
 examples/simple/CMakeFiles/simple_chargen.dir/clean:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/simple && $(CMAKE_COMMAND) -P CMakeFiles/simple_chargen.dir/cmake_clean.cmake
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/simple && $(CMAKE_COMMAND) -P CMakeFiles/simple_chargen.dir/cmake_clean.cmake
 .PHONY : examples/simple/CMakeFiles/simple_chargen.dir/clean
 
 examples/simple/CMakeFiles/simple_chargen.dir/depend:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/Desktop/muduo-1.0.1 /home/gaoguili/Desktop/muduo-1.0.1/examples/simple /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/simple /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/simple/CMakeFiles/simple_chargen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/CLionProjects/muduo-agent /home/gaoguili/CLionProjects/muduo-agent/examples/simple /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/simple /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/simple/CMakeFiles/simple_chargen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/simple/CMakeFiles/simple_chargen.dir/depend
 

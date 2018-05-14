@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gaoguili/Desktop/muduo-1.0.1
+CMAKE_SOURCE_DIR = /home/gaoguili/CLionProjects/muduo-agent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include examples/ace/logging/CMakeFiles/ace_logging_proto.dir/depend.make
@@ -58,24 +58,24 @@ include examples/ace/logging/CMakeFiles/ace_logging_proto.dir/progress.make
 include examples/ace/logging/CMakeFiles/ace_logging_proto.dir/flags.make
 
 examples/ace/logging/logrecord.pb.cc: ../examples/ace/logging/logrecord.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating logrecord.pb.cc, logrecord.pb.h"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/ace/logging && protoc --cpp_out . /home/gaoguili/Desktop/muduo-1.0.1/examples/ace/logging/logrecord.proto -I/home/gaoguili/Desktop/muduo-1.0.1/examples/ace/logging
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating logrecord.pb.cc, logrecord.pb.h"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/ace/logging && protoc --cpp_out . /home/gaoguili/CLionProjects/muduo-agent/examples/ace/logging/logrecord.proto -I/home/gaoguili/CLionProjects/muduo-agent/examples/ace/logging
 
 examples/ace/logging/logrecord.pb.h: examples/ace/logging/logrecord.pb.cc
 	@$(CMAKE_COMMAND) -E touch_nocreate examples/ace/logging/logrecord.pb.h
 
 examples/ace/logging/CMakeFiles/ace_logging_proto.dir/logrecord.pb.cc.o: examples/ace/logging/CMakeFiles/ace_logging_proto.dir/flags.make
 examples/ace/logging/CMakeFiles/ace_logging_proto.dir/logrecord.pb.cc.o: examples/ace/logging/logrecord.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object examples/ace/logging/CMakeFiles/ace_logging_proto.dir/logrecord.pb.cc.o"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/ace/logging && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-conversion -Wno-shadow -o CMakeFiles/ace_logging_proto.dir/logrecord.pb.cc.o -c /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/ace/logging/logrecord.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object examples/ace/logging/CMakeFiles/ace_logging_proto.dir/logrecord.pb.cc.o"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/ace/logging && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-conversion -Wno-shadow -o CMakeFiles/ace_logging_proto.dir/logrecord.pb.cc.o -c /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/ace/logging/logrecord.pb.cc
 
 examples/ace/logging/CMakeFiles/ace_logging_proto.dir/logrecord.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ace_logging_proto.dir/logrecord.pb.cc.i"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/ace/logging && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-conversion -Wno-shadow -E /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/ace/logging/logrecord.pb.cc > CMakeFiles/ace_logging_proto.dir/logrecord.pb.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/ace/logging && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-conversion -Wno-shadow -E /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/ace/logging/logrecord.pb.cc > CMakeFiles/ace_logging_proto.dir/logrecord.pb.cc.i
 
 examples/ace/logging/CMakeFiles/ace_logging_proto.dir/logrecord.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ace_logging_proto.dir/logrecord.pb.cc.s"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/ace/logging && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-conversion -Wno-shadow -S /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/ace/logging/logrecord.pb.cc -o CMakeFiles/ace_logging_proto.dir/logrecord.pb.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/ace/logging && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-conversion -Wno-shadow -S /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/ace/logging/logrecord.pb.cc -o CMakeFiles/ace_logging_proto.dir/logrecord.pb.cc.s
 
 examples/ace/logging/CMakeFiles/ace_logging_proto.dir/logrecord.pb.cc.o.requires:
 
@@ -98,9 +98,9 @@ ace_logging_proto_EXTERNAL_OBJECTS =
 lib/libace_logging_proto.a: examples/ace/logging/CMakeFiles/ace_logging_proto.dir/logrecord.pb.cc.o
 lib/libace_logging_proto.a: examples/ace/logging/CMakeFiles/ace_logging_proto.dir/build.make
 lib/libace_logging_proto.a: examples/ace/logging/CMakeFiles/ace_logging_proto.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../../../lib/libace_logging_proto.a"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/ace/logging && $(CMAKE_COMMAND) -P CMakeFiles/ace_logging_proto.dir/cmake_clean_target.cmake
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/ace/logging && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ace_logging_proto.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../../../lib/libace_logging_proto.a"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/ace/logging && $(CMAKE_COMMAND) -P CMakeFiles/ace_logging_proto.dir/cmake_clean_target.cmake
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/ace/logging && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ace_logging_proto.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/ace/logging/CMakeFiles/ace_logging_proto.dir/build: lib/libace_logging_proto.a
@@ -112,11 +112,11 @@ examples/ace/logging/CMakeFiles/ace_logging_proto.dir/requires: examples/ace/log
 .PHONY : examples/ace/logging/CMakeFiles/ace_logging_proto.dir/requires
 
 examples/ace/logging/CMakeFiles/ace_logging_proto.dir/clean:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/ace/logging && $(CMAKE_COMMAND) -P CMakeFiles/ace_logging_proto.dir/cmake_clean.cmake
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/ace/logging && $(CMAKE_COMMAND) -P CMakeFiles/ace_logging_proto.dir/cmake_clean.cmake
 .PHONY : examples/ace/logging/CMakeFiles/ace_logging_proto.dir/clean
 
 examples/ace/logging/CMakeFiles/ace_logging_proto.dir/depend: examples/ace/logging/logrecord.pb.cc
 examples/ace/logging/CMakeFiles/ace_logging_proto.dir/depend: examples/ace/logging/logrecord.pb.h
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/Desktop/muduo-1.0.1 /home/gaoguili/Desktop/muduo-1.0.1/examples/ace/logging /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/ace/logging /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/ace/logging/CMakeFiles/ace_logging_proto.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/CLionProjects/muduo-agent /home/gaoguili/CLionProjects/muduo-agent/examples/ace/logging /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/ace/logging /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/ace/logging/CMakeFiles/ace_logging_proto.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/ace/logging/CMakeFiles/ace_logging_proto.dir/depend
 

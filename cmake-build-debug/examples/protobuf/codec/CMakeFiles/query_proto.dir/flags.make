@@ -6,7 +6,7 @@ CXX_FLAGS = -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/include -I/home/gaoguili/Desktop/muduo-1.0.1 -I/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug 
+CXX_INCLUDES = -I/usr/local/include -I/home/gaoguili/CLionProjects/muduo-agent -I/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug 
 
 # Custom flags: examples/protobuf/codec/CMakeFiles/query_proto.dir/query.pb.cc.o_FLAGS = -Wno-conversion -Wno-shadow
 

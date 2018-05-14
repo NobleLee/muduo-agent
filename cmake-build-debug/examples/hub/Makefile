@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gaoguili/Desktop/muduo-1.0.1
+CMAKE_SOURCE_DIR = /home/gaoguili/CLionProjects/muduo-agent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,37 +59,37 @@ CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -105,7 +105,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -116,7 +116,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -126,14 +126,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/hub/CMakeFiles/progress.marks
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/hub/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles 0
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/hub/CMakeFiles/progress.marks
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/hub/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/hub/clean
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/hub/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/hub/preinstall
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/hub/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/hub/preinstall
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/hub/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 examples/hub/CMakeFiles/hub.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/hub/CMakeFiles/hub.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/hub/CMakeFiles/hub.dir/rule
 .PHONY : examples/hub/CMakeFiles/hub.dir/rule
 
 # Convenience name for target.
@@ -168,12 +168,12 @@ hub: examples/hub/CMakeFiles/hub.dir/rule
 
 # fast build rule for target.
 hub/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/hub.dir/build.make examples/hub/CMakeFiles/hub.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/hub.dir/build.make examples/hub/CMakeFiles/hub.dir/build
 .PHONY : hub/fast
 
 # Convenience name for target.
 examples/hub/CMakeFiles/pub.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/hub/CMakeFiles/pub.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/hub/CMakeFiles/pub.dir/rule
 .PHONY : examples/hub/CMakeFiles/pub.dir/rule
 
 # Convenience name for target.
@@ -183,12 +183,12 @@ pub: examples/hub/CMakeFiles/pub.dir/rule
 
 # fast build rule for target.
 pub/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/pub.dir/build.make examples/hub/CMakeFiles/pub.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/pub.dir/build.make examples/hub/CMakeFiles/pub.dir/build
 .PHONY : pub/fast
 
 # Convenience name for target.
 examples/hub/CMakeFiles/muduo_pubsub.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/hub/CMakeFiles/muduo_pubsub.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/hub/CMakeFiles/muduo_pubsub.dir/rule
 .PHONY : examples/hub/CMakeFiles/muduo_pubsub.dir/rule
 
 # Convenience name for target.
@@ -198,12 +198,12 @@ muduo_pubsub: examples/hub/CMakeFiles/muduo_pubsub.dir/rule
 
 # fast build rule for target.
 muduo_pubsub/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/muduo_pubsub.dir/build.make examples/hub/CMakeFiles/muduo_pubsub.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/muduo_pubsub.dir/build.make examples/hub/CMakeFiles/muduo_pubsub.dir/build
 .PHONY : muduo_pubsub/fast
 
 # Convenience name for target.
 examples/hub/CMakeFiles/sub.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/hub/CMakeFiles/sub.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/hub/CMakeFiles/sub.dir/rule
 .PHONY : examples/hub/CMakeFiles/sub.dir/rule
 
 # Convenience name for target.
@@ -213,7 +213,7 @@ sub: examples/hub/CMakeFiles/sub.dir/rule
 
 # fast build rule for target.
 sub/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/sub.dir/build.make examples/hub/CMakeFiles/sub.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/sub.dir/build.make examples/hub/CMakeFiles/sub.dir/build
 .PHONY : sub/fast
 
 codec.o: codec.cc.o
@@ -222,8 +222,8 @@ codec.o: codec.cc.o
 
 # target to build an object file
 codec.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/hub.dir/build.make examples/hub/CMakeFiles/hub.dir/codec.cc.o
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/muduo_pubsub.dir/build.make examples/hub/CMakeFiles/muduo_pubsub.dir/codec.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/hub.dir/build.make examples/hub/CMakeFiles/hub.dir/codec.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/muduo_pubsub.dir/build.make examples/hub/CMakeFiles/muduo_pubsub.dir/codec.cc.o
 .PHONY : codec.cc.o
 
 codec.i: codec.cc.i
@@ -232,8 +232,8 @@ codec.i: codec.cc.i
 
 # target to preprocess a source file
 codec.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/hub.dir/build.make examples/hub/CMakeFiles/hub.dir/codec.cc.i
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/muduo_pubsub.dir/build.make examples/hub/CMakeFiles/muduo_pubsub.dir/codec.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/hub.dir/build.make examples/hub/CMakeFiles/hub.dir/codec.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/muduo_pubsub.dir/build.make examples/hub/CMakeFiles/muduo_pubsub.dir/codec.cc.i
 .PHONY : codec.cc.i
 
 codec.s: codec.cc.s
@@ -242,8 +242,8 @@ codec.s: codec.cc.s
 
 # target to generate assembly for a file
 codec.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/hub.dir/build.make examples/hub/CMakeFiles/hub.dir/codec.cc.s
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/muduo_pubsub.dir/build.make examples/hub/CMakeFiles/muduo_pubsub.dir/codec.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/hub.dir/build.make examples/hub/CMakeFiles/hub.dir/codec.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/muduo_pubsub.dir/build.make examples/hub/CMakeFiles/muduo_pubsub.dir/codec.cc.s
 .PHONY : codec.cc.s
 
 hub.o: hub.cc.o
@@ -252,7 +252,7 @@ hub.o: hub.cc.o
 
 # target to build an object file
 hub.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/hub.dir/build.make examples/hub/CMakeFiles/hub.dir/hub.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/hub.dir/build.make examples/hub/CMakeFiles/hub.dir/hub.cc.o
 .PHONY : hub.cc.o
 
 hub.i: hub.cc.i
@@ -261,7 +261,7 @@ hub.i: hub.cc.i
 
 # target to preprocess a source file
 hub.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/hub.dir/build.make examples/hub/CMakeFiles/hub.dir/hub.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/hub.dir/build.make examples/hub/CMakeFiles/hub.dir/hub.cc.i
 .PHONY : hub.cc.i
 
 hub.s: hub.cc.s
@@ -270,7 +270,7 @@ hub.s: hub.cc.s
 
 # target to generate assembly for a file
 hub.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/hub.dir/build.make examples/hub/CMakeFiles/hub.dir/hub.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/hub.dir/build.make examples/hub/CMakeFiles/hub.dir/hub.cc.s
 .PHONY : hub.cc.s
 
 pub.o: pub.cc.o
@@ -279,7 +279,7 @@ pub.o: pub.cc.o
 
 # target to build an object file
 pub.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/pub.dir/build.make examples/hub/CMakeFiles/pub.dir/pub.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/pub.dir/build.make examples/hub/CMakeFiles/pub.dir/pub.cc.o
 .PHONY : pub.cc.o
 
 pub.i: pub.cc.i
@@ -288,7 +288,7 @@ pub.i: pub.cc.i
 
 # target to preprocess a source file
 pub.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/pub.dir/build.make examples/hub/CMakeFiles/pub.dir/pub.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/pub.dir/build.make examples/hub/CMakeFiles/pub.dir/pub.cc.i
 .PHONY : pub.cc.i
 
 pub.s: pub.cc.s
@@ -297,7 +297,7 @@ pub.s: pub.cc.s
 
 # target to generate assembly for a file
 pub.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/pub.dir/build.make examples/hub/CMakeFiles/pub.dir/pub.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/pub.dir/build.make examples/hub/CMakeFiles/pub.dir/pub.cc.s
 .PHONY : pub.cc.s
 
 pubsub.o: pubsub.cc.o
@@ -306,7 +306,7 @@ pubsub.o: pubsub.cc.o
 
 # target to build an object file
 pubsub.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/muduo_pubsub.dir/build.make examples/hub/CMakeFiles/muduo_pubsub.dir/pubsub.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/muduo_pubsub.dir/build.make examples/hub/CMakeFiles/muduo_pubsub.dir/pubsub.cc.o
 .PHONY : pubsub.cc.o
 
 pubsub.i: pubsub.cc.i
@@ -315,7 +315,7 @@ pubsub.i: pubsub.cc.i
 
 # target to preprocess a source file
 pubsub.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/muduo_pubsub.dir/build.make examples/hub/CMakeFiles/muduo_pubsub.dir/pubsub.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/muduo_pubsub.dir/build.make examples/hub/CMakeFiles/muduo_pubsub.dir/pubsub.cc.i
 .PHONY : pubsub.cc.i
 
 pubsub.s: pubsub.cc.s
@@ -324,7 +324,7 @@ pubsub.s: pubsub.cc.s
 
 # target to generate assembly for a file
 pubsub.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/muduo_pubsub.dir/build.make examples/hub/CMakeFiles/muduo_pubsub.dir/pubsub.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/muduo_pubsub.dir/build.make examples/hub/CMakeFiles/muduo_pubsub.dir/pubsub.cc.s
 .PHONY : pubsub.cc.s
 
 sub.o: sub.cc.o
@@ -333,7 +333,7 @@ sub.o: sub.cc.o
 
 # target to build an object file
 sub.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/sub.dir/build.make examples/hub/CMakeFiles/sub.dir/sub.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/sub.dir/build.make examples/hub/CMakeFiles/sub.dir/sub.cc.o
 .PHONY : sub.cc.o
 
 sub.i: sub.cc.i
@@ -342,7 +342,7 @@ sub.i: sub.cc.i
 
 # target to preprocess a source file
 sub.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/sub.dir/build.make examples/hub/CMakeFiles/sub.dir/sub.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/sub.dir/build.make examples/hub/CMakeFiles/sub.dir/sub.cc.i
 .PHONY : sub.cc.i
 
 sub.s: sub.cc.s
@@ -351,7 +351,7 @@ sub.s: sub.cc.s
 
 # target to generate assembly for a file
 sub.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/sub.dir/build.make examples/hub/CMakeFiles/sub.dir/sub.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/hub/CMakeFiles/sub.dir/build.make examples/hub/CMakeFiles/sub.dir/sub.cc.s
 .PHONY : sub.cc.s
 
 # Help Target
@@ -396,6 +396,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

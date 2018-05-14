@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/tests/Atomic_unittest.cc" "/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/base/tests/CMakeFiles/atomic_unittest.dir/Atomic_unittest.cc.o"
+  "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/tests/Atomic_unittest.cc" "/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/base/tests/CMakeFiles/atomic_unittest.dir/Atomic_unittest.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

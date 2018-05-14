@@ -1,4 +1,4 @@
-# Install script for directory: /home/gaoguili/Desktop/muduo-1.0.1/examples/curl
+# Install script for directory: /home/gaoguili/CLionProjects/muduo-agent/examples/curl
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,10 +38,10 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/lib/libmuduo_curl.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/lib/libmuduo_curl.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/muduo/curl" TYPE FILE FILES "/home/gaoguili/Desktop/muduo-1.0.1/examples/curl/Curl.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/muduo/curl" TYPE FILE FILES "/home/gaoguili/CLionProjects/muduo-agent/examples/curl/Curl.h")
 endif()
 

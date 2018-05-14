@@ -1,4 +1,4 @@
-# Install script for directory: /home/gaoguili/Desktop/muduo-1.0.1/muduo/base/tests
+# Install script for directory: /home/gaoguili/CLionProjects/muduo-agent/muduo/base/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gaoguili/Desktop/muduo-1.0.1
+CMAKE_SOURCE_DIR = /home/gaoguili/CLionProjects/muduo-agent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include examples/fastcgi/CMakeFiles/fastcgi_test.dir/depend.make
@@ -59,16 +59,16 @@ include examples/fastcgi/CMakeFiles/fastcgi_test.dir/flags.make
 
 examples/fastcgi/CMakeFiles/fastcgi_test.dir/fastcgi.cc.o: examples/fastcgi/CMakeFiles/fastcgi_test.dir/flags.make
 examples/fastcgi/CMakeFiles/fastcgi_test.dir/fastcgi.cc.o: ../examples/fastcgi/fastcgi.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/fastcgi/CMakeFiles/fastcgi_test.dir/fastcgi.cc.o"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/fastcgi && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fastcgi_test.dir/fastcgi.cc.o -c /home/gaoguili/Desktop/muduo-1.0.1/examples/fastcgi/fastcgi.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/fastcgi/CMakeFiles/fastcgi_test.dir/fastcgi.cc.o"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/fastcgi && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fastcgi_test.dir/fastcgi.cc.o -c /home/gaoguili/CLionProjects/muduo-agent/examples/fastcgi/fastcgi.cc
 
 examples/fastcgi/CMakeFiles/fastcgi_test.dir/fastcgi.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fastcgi_test.dir/fastcgi.cc.i"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/fastcgi && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/Desktop/muduo-1.0.1/examples/fastcgi/fastcgi.cc > CMakeFiles/fastcgi_test.dir/fastcgi.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/fastcgi && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/CLionProjects/muduo-agent/examples/fastcgi/fastcgi.cc > CMakeFiles/fastcgi_test.dir/fastcgi.cc.i
 
 examples/fastcgi/CMakeFiles/fastcgi_test.dir/fastcgi.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fastcgi_test.dir/fastcgi.cc.s"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/fastcgi && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/Desktop/muduo-1.0.1/examples/fastcgi/fastcgi.cc -o CMakeFiles/fastcgi_test.dir/fastcgi.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/fastcgi && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/CLionProjects/muduo-agent/examples/fastcgi/fastcgi.cc -o CMakeFiles/fastcgi_test.dir/fastcgi.cc.s
 
 examples/fastcgi/CMakeFiles/fastcgi_test.dir/fastcgi.cc.o.requires:
 
@@ -83,16 +83,16 @@ examples/fastcgi/CMakeFiles/fastcgi_test.dir/fastcgi.cc.o.provides.build: exampl
 
 examples/fastcgi/CMakeFiles/fastcgi_test.dir/fastcgi_test.cc.o: examples/fastcgi/CMakeFiles/fastcgi_test.dir/flags.make
 examples/fastcgi/CMakeFiles/fastcgi_test.dir/fastcgi_test.cc.o: ../examples/fastcgi/fastcgi_test.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object examples/fastcgi/CMakeFiles/fastcgi_test.dir/fastcgi_test.cc.o"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/fastcgi && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fastcgi_test.dir/fastcgi_test.cc.o -c /home/gaoguili/Desktop/muduo-1.0.1/examples/fastcgi/fastcgi_test.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object examples/fastcgi/CMakeFiles/fastcgi_test.dir/fastcgi_test.cc.o"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/fastcgi && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fastcgi_test.dir/fastcgi_test.cc.o -c /home/gaoguili/CLionProjects/muduo-agent/examples/fastcgi/fastcgi_test.cc
 
 examples/fastcgi/CMakeFiles/fastcgi_test.dir/fastcgi_test.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fastcgi_test.dir/fastcgi_test.cc.i"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/fastcgi && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/Desktop/muduo-1.0.1/examples/fastcgi/fastcgi_test.cc > CMakeFiles/fastcgi_test.dir/fastcgi_test.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/fastcgi && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/CLionProjects/muduo-agent/examples/fastcgi/fastcgi_test.cc > CMakeFiles/fastcgi_test.dir/fastcgi_test.cc.i
 
 examples/fastcgi/CMakeFiles/fastcgi_test.dir/fastcgi_test.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fastcgi_test.dir/fastcgi_test.cc.s"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/fastcgi && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/Desktop/muduo-1.0.1/examples/fastcgi/fastcgi_test.cc -o CMakeFiles/fastcgi_test.dir/fastcgi_test.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/fastcgi && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/CLionProjects/muduo-agent/examples/fastcgi/fastcgi_test.cc -o CMakeFiles/fastcgi_test.dir/fastcgi_test.cc.s
 
 examples/fastcgi/CMakeFiles/fastcgi_test.dir/fastcgi_test.cc.o.requires:
 
@@ -119,8 +119,8 @@ bin/fastcgi_test: examples/fastcgi/CMakeFiles/fastcgi_test.dir/build.make
 bin/fastcgi_test: lib/libmuduo_net.a
 bin/fastcgi_test: lib/libmuduo_base.a
 bin/fastcgi_test: examples/fastcgi/CMakeFiles/fastcgi_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../bin/fastcgi_test"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/fastcgi && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fastcgi_test.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../bin/fastcgi_test"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/fastcgi && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fastcgi_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/fastcgi/CMakeFiles/fastcgi_test.dir/build: bin/fastcgi_test
@@ -133,10 +133,10 @@ examples/fastcgi/CMakeFiles/fastcgi_test.dir/requires: examples/fastcgi/CMakeFil
 .PHONY : examples/fastcgi/CMakeFiles/fastcgi_test.dir/requires
 
 examples/fastcgi/CMakeFiles/fastcgi_test.dir/clean:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/fastcgi && $(CMAKE_COMMAND) -P CMakeFiles/fastcgi_test.dir/cmake_clean.cmake
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/fastcgi && $(CMAKE_COMMAND) -P CMakeFiles/fastcgi_test.dir/cmake_clean.cmake
 .PHONY : examples/fastcgi/CMakeFiles/fastcgi_test.dir/clean
 
 examples/fastcgi/CMakeFiles/fastcgi_test.dir/depend:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/Desktop/muduo-1.0.1 /home/gaoguili/Desktop/muduo-1.0.1/examples/fastcgi /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/fastcgi /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/fastcgi/CMakeFiles/fastcgi_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/CLionProjects/muduo-agent /home/gaoguili/CLionProjects/muduo-agent/examples/fastcgi /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/fastcgi /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/fastcgi/CMakeFiles/fastcgi_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/fastcgi/CMakeFiles/fastcgi_test.dir/depend
 

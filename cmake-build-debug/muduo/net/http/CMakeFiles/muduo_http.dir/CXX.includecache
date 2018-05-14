@@ -174,7 +174,7 @@ muduo/net/TcpServer.h
 boost/noncopyable.hpp
 -
 
-/home/gaoguili/Desktop/muduo-1.0.1/muduo/net/http/HttpResponse.cc
+/home/gaoguili/CLionProjects/muduo-agent/muduo/net/http/HttpResponse.cc
 muduo/net/http/HttpResponse.h
 -
 muduo/net/Buffer.h
@@ -182,7 +182,7 @@ muduo/net/Buffer.h
 stdio.h
 -
 
-/home/gaoguili/Desktop/muduo-1.0.1/muduo/net/http/HttpServer.cc
+/home/gaoguili/CLionProjects/muduo-agent/muduo/net/http/HttpServer.cc
 muduo/net/http/HttpServer.h
 -
 muduo/base/Logging.h

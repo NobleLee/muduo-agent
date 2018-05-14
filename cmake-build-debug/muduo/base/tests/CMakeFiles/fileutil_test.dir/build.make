@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gaoguili/Desktop/muduo-1.0.1
+CMAKE_SOURCE_DIR = /home/gaoguili/CLionProjects/muduo-agent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include muduo/base/tests/CMakeFiles/fileutil_test.dir/depend.make
@@ -59,16 +59,16 @@ include muduo/base/tests/CMakeFiles/fileutil_test.dir/flags.make
 
 muduo/base/tests/CMakeFiles/fileutil_test.dir/FileUtil_test.cc.o: muduo/base/tests/CMakeFiles/fileutil_test.dir/flags.make
 muduo/base/tests/CMakeFiles/fileutil_test.dir/FileUtil_test.cc.o: ../muduo/base/tests/FileUtil_test.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object muduo/base/tests/CMakeFiles/fileutil_test.dir/FileUtil_test.cc.o"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/base/tests && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fileutil_test.dir/FileUtil_test.cc.o -c /home/gaoguili/Desktop/muduo-1.0.1/muduo/base/tests/FileUtil_test.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object muduo/base/tests/CMakeFiles/fileutil_test.dir/FileUtil_test.cc.o"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/base/tests && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/fileutil_test.dir/FileUtil_test.cc.o -c /home/gaoguili/CLionProjects/muduo-agent/muduo/base/tests/FileUtil_test.cc
 
 muduo/base/tests/CMakeFiles/fileutil_test.dir/FileUtil_test.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fileutil_test.dir/FileUtil_test.cc.i"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/base/tests && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/Desktop/muduo-1.0.1/muduo/base/tests/FileUtil_test.cc > CMakeFiles/fileutil_test.dir/FileUtil_test.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/base/tests && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/CLionProjects/muduo-agent/muduo/base/tests/FileUtil_test.cc > CMakeFiles/fileutil_test.dir/FileUtil_test.cc.i
 
 muduo/base/tests/CMakeFiles/fileutil_test.dir/FileUtil_test.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fileutil_test.dir/FileUtil_test.cc.s"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/base/tests && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/Desktop/muduo-1.0.1/muduo/base/tests/FileUtil_test.cc -o CMakeFiles/fileutil_test.dir/FileUtil_test.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/base/tests && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/CLionProjects/muduo-agent/muduo/base/tests/FileUtil_test.cc -o CMakeFiles/fileutil_test.dir/FileUtil_test.cc.s
 
 muduo/base/tests/CMakeFiles/fileutil_test.dir/FileUtil_test.cc.o.requires:
 
@@ -92,8 +92,8 @@ bin/fileutil_test: muduo/base/tests/CMakeFiles/fileutil_test.dir/FileUtil_test.c
 bin/fileutil_test: muduo/base/tests/CMakeFiles/fileutil_test.dir/build.make
 bin/fileutil_test: lib/libmuduo_base.a
 bin/fileutil_test: muduo/base/tests/CMakeFiles/fileutil_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../../bin/fileutil_test"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/base/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fileutil_test.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../../bin/fileutil_test"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/base/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fileutil_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 muduo/base/tests/CMakeFiles/fileutil_test.dir/build: bin/fileutil_test
@@ -105,10 +105,10 @@ muduo/base/tests/CMakeFiles/fileutil_test.dir/requires: muduo/base/tests/CMakeFi
 .PHONY : muduo/base/tests/CMakeFiles/fileutil_test.dir/requires
 
 muduo/base/tests/CMakeFiles/fileutil_test.dir/clean:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/base/tests && $(CMAKE_COMMAND) -P CMakeFiles/fileutil_test.dir/cmake_clean.cmake
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/base/tests && $(CMAKE_COMMAND) -P CMakeFiles/fileutil_test.dir/cmake_clean.cmake
 .PHONY : muduo/base/tests/CMakeFiles/fileutil_test.dir/clean
 
 muduo/base/tests/CMakeFiles/fileutil_test.dir/depend:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/Desktop/muduo-1.0.1 /home/gaoguili/Desktop/muduo-1.0.1/muduo/base/tests /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/base/tests /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/base/tests/CMakeFiles/fileutil_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/CLionProjects/muduo-agent /home/gaoguili/CLionProjects/muduo-agent/muduo/base/tests /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/base/tests /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/base/tests/CMakeFiles/fileutil_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : muduo/base/tests/CMakeFiles/fileutil_test.dir/depend
 

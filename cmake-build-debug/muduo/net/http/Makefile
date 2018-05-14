@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gaoguili/Desktop/muduo-1.0.1
+CMAKE_SOURCE_DIR = /home/gaoguili/CLionProjects/muduo-agent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,37 +59,37 @@ CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -105,7 +105,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -116,7 +116,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -126,14 +126,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/http/CMakeFiles/progress.marks
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/http/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles 0
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/http/CMakeFiles/progress.marks
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/http/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/http/clean
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/http/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/http/preinstall
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/http/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/http/preinstall
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/http/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 muduo/net/http/CMakeFiles/muduo_http.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/http/CMakeFiles/muduo_http.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/http/CMakeFiles/muduo_http.dir/rule
 .PHONY : muduo/net/http/CMakeFiles/muduo_http.dir/rule
 
 # Convenience name for target.
@@ -168,27 +168,27 @@ muduo_http: muduo/net/http/CMakeFiles/muduo_http.dir/rule
 
 # fast build rule for target.
 muduo_http/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/build
 .PHONY : muduo_http/fast
 
 # Convenience name for target.
-muduo/net/http/CMakeFiles/httpserver_test.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/http/CMakeFiles/httpserver_test.dir/rule
-.PHONY : muduo/net/http/CMakeFiles/httpserver_test.dir/rule
+muduo/net/http/CMakeFiles/httpAgentConsumer.dir/rule:
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/http/CMakeFiles/httpAgentConsumer.dir/rule
+.PHONY : muduo/net/http/CMakeFiles/httpAgentConsumer.dir/rule
 
 # Convenience name for target.
-httpserver_test: muduo/net/http/CMakeFiles/httpserver_test.dir/rule
+httpAgentConsumer: muduo/net/http/CMakeFiles/httpAgentConsumer.dir/rule
 
-.PHONY : httpserver_test
+.PHONY : httpAgentConsumer
 
 # fast build rule for target.
-httpserver_test/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/httpserver_test.dir/build.make muduo/net/http/CMakeFiles/httpserver_test.dir/build
-.PHONY : httpserver_test/fast
+httpAgentConsumer/fast:
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/httpAgentConsumer.dir/build.make muduo/net/http/CMakeFiles/httpAgentConsumer.dir/build
+.PHONY : httpAgentConsumer/fast
 
 # Convenience name for target.
 muduo/net/http/CMakeFiles/httprequest_unittest.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/http/CMakeFiles/httprequest_unittest.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/http/CMakeFiles/httprequest_unittest.dir/rule
 .PHONY : muduo/net/http/CMakeFiles/httprequest_unittest.dir/rule
 
 # Convenience name for target.
@@ -198,7 +198,7 @@ httprequest_unittest: muduo/net/http/CMakeFiles/httprequest_unittest.dir/rule
 
 # fast build rule for target.
 httprequest_unittest/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/httprequest_unittest.dir/build.make muduo/net/http/CMakeFiles/httprequest_unittest.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/httprequest_unittest.dir/build.make muduo/net/http/CMakeFiles/httprequest_unittest.dir/build
 .PHONY : httprequest_unittest/fast
 
 HttpResponse.o: HttpResponse.cc.o
@@ -207,7 +207,7 @@ HttpResponse.o: HttpResponse.cc.o
 
 # target to build an object file
 HttpResponse.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/HttpResponse.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/HttpResponse.cc.o
 .PHONY : HttpResponse.cc.o
 
 HttpResponse.i: HttpResponse.cc.i
@@ -216,7 +216,7 @@ HttpResponse.i: HttpResponse.cc.i
 
 # target to preprocess a source file
 HttpResponse.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/HttpResponse.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/HttpResponse.cc.i
 .PHONY : HttpResponse.cc.i
 
 HttpResponse.s: HttpResponse.cc.s
@@ -225,7 +225,7 @@ HttpResponse.s: HttpResponse.cc.s
 
 # target to generate assembly for a file
 HttpResponse.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/HttpResponse.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/HttpResponse.cc.s
 .PHONY : HttpResponse.cc.s
 
 HttpServer.o: HttpServer.cc.o
@@ -234,7 +234,7 @@ HttpServer.o: HttpServer.cc.o
 
 # target to build an object file
 HttpServer.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.o
 .PHONY : HttpServer.cc.o
 
 HttpServer.i: HttpServer.cc.i
@@ -243,7 +243,7 @@ HttpServer.i: HttpServer.cc.i
 
 # target to preprocess a source file
 HttpServer.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.i
 .PHONY : HttpServer.cc.i
 
 HttpServer.s: HttpServer.cc.s
@@ -252,8 +252,35 @@ HttpServer.s: HttpServer.cc.s
 
 # target to generate assembly for a file
 HttpServer.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/muduo_http.dir/build.make muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.s
 .PHONY : HttpServer.cc.s
+
+tests/HttpAgentConsumer.o: tests/HttpAgentConsumer.cpp.o
+
+.PHONY : tests/HttpAgentConsumer.o
+
+# target to build an object file
+tests/HttpAgentConsumer.cpp.o:
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/httpAgentConsumer.dir/build.make muduo/net/http/CMakeFiles/httpAgentConsumer.dir/tests/HttpAgentConsumer.cpp.o
+.PHONY : tests/HttpAgentConsumer.cpp.o
+
+tests/HttpAgentConsumer.i: tests/HttpAgentConsumer.cpp.i
+
+.PHONY : tests/HttpAgentConsumer.i
+
+# target to preprocess a source file
+tests/HttpAgentConsumer.cpp.i:
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/httpAgentConsumer.dir/build.make muduo/net/http/CMakeFiles/httpAgentConsumer.dir/tests/HttpAgentConsumer.cpp.i
+.PHONY : tests/HttpAgentConsumer.cpp.i
+
+tests/HttpAgentConsumer.s: tests/HttpAgentConsumer.cpp.s
+
+.PHONY : tests/HttpAgentConsumer.s
+
+# target to generate assembly for a file
+tests/HttpAgentConsumer.cpp.s:
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/httpAgentConsumer.dir/build.make muduo/net/http/CMakeFiles/httpAgentConsumer.dir/tests/HttpAgentConsumer.cpp.s
+.PHONY : tests/HttpAgentConsumer.cpp.s
 
 tests/HttpRequest_unittest.o: tests/HttpRequest_unittest.cc.o
 
@@ -261,7 +288,7 @@ tests/HttpRequest_unittest.o: tests/HttpRequest_unittest.cc.o
 
 # target to build an object file
 tests/HttpRequest_unittest.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/httprequest_unittest.dir/build.make muduo/net/http/CMakeFiles/httprequest_unittest.dir/tests/HttpRequest_unittest.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/httprequest_unittest.dir/build.make muduo/net/http/CMakeFiles/httprequest_unittest.dir/tests/HttpRequest_unittest.cc.o
 .PHONY : tests/HttpRequest_unittest.cc.o
 
 tests/HttpRequest_unittest.i: tests/HttpRequest_unittest.cc.i
@@ -270,7 +297,7 @@ tests/HttpRequest_unittest.i: tests/HttpRequest_unittest.cc.i
 
 # target to preprocess a source file
 tests/HttpRequest_unittest.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/httprequest_unittest.dir/build.make muduo/net/http/CMakeFiles/httprequest_unittest.dir/tests/HttpRequest_unittest.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/httprequest_unittest.dir/build.make muduo/net/http/CMakeFiles/httprequest_unittest.dir/tests/HttpRequest_unittest.cc.i
 .PHONY : tests/HttpRequest_unittest.cc.i
 
 tests/HttpRequest_unittest.s: tests/HttpRequest_unittest.cc.s
@@ -279,7 +306,7 @@ tests/HttpRequest_unittest.s: tests/HttpRequest_unittest.cc.s
 
 # target to generate assembly for a file
 tests/HttpRequest_unittest.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/httprequest_unittest.dir/build.make muduo/net/http/CMakeFiles/httprequest_unittest.dir/tests/HttpRequest_unittest.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/httprequest_unittest.dir/build.make muduo/net/http/CMakeFiles/httprequest_unittest.dir/tests/HttpRequest_unittest.cc.s
 .PHONY : tests/HttpRequest_unittest.cc.s
 
 tests/HttpServer_test.o: tests/HttpServer_test.cc.o
@@ -288,7 +315,7 @@ tests/HttpServer_test.o: tests/HttpServer_test.cc.o
 
 # target to build an object file
 tests/HttpServer_test.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/httpserver_test.dir/build.make muduo/net/http/CMakeFiles/httpserver_test.dir/tests/HttpServer_test.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/httpAgentConsumer.dir/build.make muduo/net/http/CMakeFiles/httpAgentConsumer.dir/tests/HttpServer_test.cc.o
 .PHONY : tests/HttpServer_test.cc.o
 
 tests/HttpServer_test.i: tests/HttpServer_test.cc.i
@@ -297,7 +324,7 @@ tests/HttpServer_test.i: tests/HttpServer_test.cc.i
 
 # target to preprocess a source file
 tests/HttpServer_test.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/httpserver_test.dir/build.make muduo/net/http/CMakeFiles/httpserver_test.dir/tests/HttpServer_test.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/httpAgentConsumer.dir/build.make muduo/net/http/CMakeFiles/httpAgentConsumer.dir/tests/HttpServer_test.cc.i
 .PHONY : tests/HttpServer_test.cc.i
 
 tests/HttpServer_test.s: tests/HttpServer_test.cc.s
@@ -306,7 +333,7 @@ tests/HttpServer_test.s: tests/HttpServer_test.cc.s
 
 # target to generate assembly for a file
 tests/HttpServer_test.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/httpserver_test.dir/build.make muduo/net/http/CMakeFiles/httpserver_test.dir/tests/HttpServer_test.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/http/CMakeFiles/httpAgentConsumer.dir/build.make muduo/net/http/CMakeFiles/httpAgentConsumer.dir/tests/HttpServer_test.cc.s
 .PHONY : tests/HttpServer_test.cc.s
 
 # Help Target
@@ -321,15 +348,18 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... muduo_http"
-	@echo "... httpserver_test"
-	@echo "... httprequest_unittest"
+	@echo "... httpAgentConsumer"
 	@echo "... edit_cache"
+	@echo "... httprequest_unittest"
 	@echo "... HttpResponse.o"
 	@echo "... HttpResponse.i"
 	@echo "... HttpResponse.s"
 	@echo "... HttpServer.o"
 	@echo "... HttpServer.i"
 	@echo "... HttpServer.s"
+	@echo "... tests/HttpAgentConsumer.o"
+	@echo "... tests/HttpAgentConsumer.i"
+	@echo "... tests/HttpAgentConsumer.s"
 	@echo "... tests/HttpRequest_unittest.o"
 	@echo "... tests/HttpRequest_unittest.i"
 	@echo "... tests/HttpRequest_unittest.s"
@@ -347,6 +377,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gaoguili/Desktop/muduo-1.0.1
+CMAKE_SOURCE_DIR = /home/gaoguili/CLionProjects/muduo-agent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -81,13 +81,13 @@ edit_cache/fast: edit_cache
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -103,37 +103,37 @@ list_install_components/fast: list_install_components
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/sudoku/CMakeFiles/progress.marks
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/sudoku/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles 0
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/sudoku/CMakeFiles/progress.marks
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/sudoku/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/sudoku/clean
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/sudoku/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/sudoku/preinstall
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/sudoku/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/sudoku/preinstall
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/sudoku/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/rule
 .PHONY : examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/rule
 
 # Convenience name for target.
@@ -168,12 +168,12 @@ sudoku_solver_basic: examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/rule
 
 # fast build rule for target.
 sudoku_solver_basic/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/build
 .PHONY : sudoku_solver_basic/fast
 
 # Convenience name for target.
 examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/rule
 .PHONY : examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/rule
 
 # Convenience name for target.
@@ -183,12 +183,12 @@ sudoku_solver_multiloop: examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/
 
 # fast build rule for target.
 sudoku_solver_multiloop/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/build
 .PHONY : sudoku_solver_multiloop/fast
 
 # Convenience name for target.
 examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/rule
 .PHONY : examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/rule
 
 # Convenience name for target.
@@ -198,12 +198,12 @@ sudoku_solver_threadpool: examples/sudoku/CMakeFiles/sudoku_solver_threadpool.di
 
 # fast build rule for target.
 sudoku_solver_threadpool/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/build
 .PHONY : sudoku_solver_threadpool/fast
 
 # Convenience name for target.
 examples/sudoku/CMakeFiles/sudoku_client.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/sudoku/CMakeFiles/sudoku_client.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/sudoku/CMakeFiles/sudoku_client.dir/rule
 .PHONY : examples/sudoku/CMakeFiles/sudoku_client.dir/rule
 
 # Convenience name for target.
@@ -213,7 +213,7 @@ sudoku_client: examples/sudoku/CMakeFiles/sudoku_client.dir/rule
 
 # fast build rule for target.
 sudoku_client/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_client.dir/build.make examples/sudoku/CMakeFiles/sudoku_client.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_client.dir/build.make examples/sudoku/CMakeFiles/sudoku_client.dir/build
 .PHONY : sudoku_client/fast
 
 client.o: client.cc.o
@@ -222,7 +222,7 @@ client.o: client.cc.o
 
 # target to build an object file
 client.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_client.dir/build.make examples/sudoku/CMakeFiles/sudoku_client.dir/client.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_client.dir/build.make examples/sudoku/CMakeFiles/sudoku_client.dir/client.cc.o
 .PHONY : client.cc.o
 
 client.i: client.cc.i
@@ -231,7 +231,7 @@ client.i: client.cc.i
 
 # target to preprocess a source file
 client.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_client.dir/build.make examples/sudoku/CMakeFiles/sudoku_client.dir/client.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_client.dir/build.make examples/sudoku/CMakeFiles/sudoku_client.dir/client.cc.i
 .PHONY : client.cc.i
 
 client.s: client.cc.s
@@ -240,7 +240,7 @@ client.s: client.cc.s
 
 # target to generate assembly for a file
 client.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_client.dir/build.make examples/sudoku/CMakeFiles/sudoku_client.dir/client.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_client.dir/build.make examples/sudoku/CMakeFiles/sudoku_client.dir/client.cc.s
 .PHONY : client.cc.s
 
 server_basic.o: server_basic.cc.o
@@ -249,7 +249,7 @@ server_basic.o: server_basic.cc.o
 
 # target to build an object file
 server_basic.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/server_basic.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/server_basic.cc.o
 .PHONY : server_basic.cc.o
 
 server_basic.i: server_basic.cc.i
@@ -258,7 +258,7 @@ server_basic.i: server_basic.cc.i
 
 # target to preprocess a source file
 server_basic.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/server_basic.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/server_basic.cc.i
 .PHONY : server_basic.cc.i
 
 server_basic.s: server_basic.cc.s
@@ -267,7 +267,7 @@ server_basic.s: server_basic.cc.s
 
 # target to generate assembly for a file
 server_basic.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/server_basic.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/server_basic.cc.s
 .PHONY : server_basic.cc.s
 
 server_multiloop.o: server_multiloop.cc.o
@@ -276,7 +276,7 @@ server_multiloop.o: server_multiloop.cc.o
 
 # target to build an object file
 server_multiloop.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.cc.o
 .PHONY : server_multiloop.cc.o
 
 server_multiloop.i: server_multiloop.cc.i
@@ -285,7 +285,7 @@ server_multiloop.i: server_multiloop.cc.i
 
 # target to preprocess a source file
 server_multiloop.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.cc.i
 .PHONY : server_multiloop.cc.i
 
 server_multiloop.s: server_multiloop.cc.s
@@ -294,7 +294,7 @@ server_multiloop.s: server_multiloop.cc.s
 
 # target to generate assembly for a file
 server_multiloop.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/server_multiloop.cc.s
 .PHONY : server_multiloop.cc.s
 
 server_threadpool.o: server_threadpool.cc.o
@@ -303,7 +303,7 @@ server_threadpool.o: server_threadpool.cc.o
 
 # target to build an object file
 server_threadpool.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.cc.o
 .PHONY : server_threadpool.cc.o
 
 server_threadpool.i: server_threadpool.cc.i
@@ -312,7 +312,7 @@ server_threadpool.i: server_threadpool.cc.i
 
 # target to preprocess a source file
 server_threadpool.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.cc.i
 .PHONY : server_threadpool.cc.i
 
 server_threadpool.s: server_threadpool.cc.s
@@ -321,7 +321,7 @@ server_threadpool.s: server_threadpool.cc.s
 
 # target to generate assembly for a file
 server_threadpool.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.cc.s
 .PHONY : server_threadpool.cc.s
 
 sudoku.o: sudoku.cc.o
@@ -330,10 +330,10 @@ sudoku.o: sudoku.cc.o
 
 # target to build an object file
 sudoku.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/sudoku.cc.o
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/sudoku.cc.o
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/sudoku.cc.o
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_client.dir/build.make examples/sudoku/CMakeFiles/sudoku_client.dir/sudoku.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/sudoku.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/sudoku.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/sudoku.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_client.dir/build.make examples/sudoku/CMakeFiles/sudoku_client.dir/sudoku.cc.o
 .PHONY : sudoku.cc.o
 
 sudoku.i: sudoku.cc.i
@@ -342,10 +342,10 @@ sudoku.i: sudoku.cc.i
 
 # target to preprocess a source file
 sudoku.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/sudoku.cc.i
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/sudoku.cc.i
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/sudoku.cc.i
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_client.dir/build.make examples/sudoku/CMakeFiles/sudoku_client.dir/sudoku.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/sudoku.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/sudoku.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/sudoku.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_client.dir/build.make examples/sudoku/CMakeFiles/sudoku_client.dir/sudoku.cc.i
 .PHONY : sudoku.cc.i
 
 sudoku.s: sudoku.cc.s
@@ -354,10 +354,10 @@ sudoku.s: sudoku.cc.s
 
 # target to generate assembly for a file
 sudoku.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/sudoku.cc.s
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/sudoku.cc.s
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/sudoku.cc.s
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_client.dir/build.make examples/sudoku/CMakeFiles/sudoku_client.dir/sudoku.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_basic.dir/sudoku.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/sudoku.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/sudoku.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/sudoku/CMakeFiles/sudoku_client.dir/build.make examples/sudoku/CMakeFiles/sudoku_client.dir/sudoku.cc.s
 .PHONY : sudoku.cc.s
 
 # Help Target
@@ -402,6 +402,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

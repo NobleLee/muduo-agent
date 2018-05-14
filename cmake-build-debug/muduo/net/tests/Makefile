@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gaoguili/Desktop/muduo-1.0.1
+CMAKE_SOURCE_DIR = /home/gaoguili/CLionProjects/muduo-agent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,37 +59,37 @@ CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target list_install_components
@@ -105,7 +105,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -116,7 +116,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -126,14 +126,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/tests/CMakeFiles/progress.marks
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles 0
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/tests/CMakeFiles/progress.marks
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/clean
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/preinstall
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/preinstall
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/rule
 .PHONY : muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/rule
 
 # Convenience name for target.
@@ -168,12 +168,12 @@ timerqueue_unittest: muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/rule
 
 # fast build rule for target.
 timerqueue_unittest/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/build.make muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/build.make muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/build
 .PHONY : timerqueue_unittest/fast
 
 # Convenience name for target.
 muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/rule
 .PHONY : muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/rule
 
 # Convenience name for target.
@@ -183,12 +183,12 @@ eventloopthread_unittest: muduo/net/tests/CMakeFiles/eventloopthread_unittest.di
 
 # fast build rule for target.
 eventloopthread_unittest/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/build
 .PHONY : eventloopthread_unittest/fast
 
 # Convenience name for target.
 muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/rule
 .PHONY : muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/rule
 
 # Convenience name for target.
@@ -198,12 +198,12 @@ buffer_cpp11_unittest: muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/rule
 
 # fast build rule for target.
 buffer_cpp11_unittest/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/build.make muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/build.make muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/build
 .PHONY : buffer_cpp11_unittest/fast
 
 # Convenience name for target.
 muduo/net/tests/CMakeFiles/eventloop_unittest.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/eventloop_unittest.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/eventloop_unittest.dir/rule
 .PHONY : muduo/net/tests/CMakeFiles/eventloop_unittest.dir/rule
 
 # Convenience name for target.
@@ -213,12 +213,12 @@ eventloop_unittest: muduo/net/tests/CMakeFiles/eventloop_unittest.dir/rule
 
 # fast build rule for target.
 eventloop_unittest/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloop_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloop_unittest.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloop_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloop_unittest.dir/build
 .PHONY : eventloop_unittest/fast
 
 # Convenience name for target.
 muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/rule
 .PHONY : muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/rule
 
 # Convenience name for target.
@@ -228,12 +228,12 @@ tcpclient_reg1: muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/rule
 
 # fast build rule for target.
 tcpclient_reg1/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/build.make muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/build.make muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/build
 .PHONY : tcpclient_reg1/fast
 
 # Convenience name for target.
 muduo/net/tests/CMakeFiles/echoclient_unittest.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/echoclient_unittest.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/echoclient_unittest.dir/rule
 .PHONY : muduo/net/tests/CMakeFiles/echoclient_unittest.dir/rule
 
 # Convenience name for target.
@@ -243,12 +243,12 @@ echoclient_unittest: muduo/net/tests/CMakeFiles/echoclient_unittest.dir/rule
 
 # fast build rule for target.
 echoclient_unittest/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/echoclient_unittest.dir/build.make muduo/net/tests/CMakeFiles/echoclient_unittest.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/echoclient_unittest.dir/build.make muduo/net/tests/CMakeFiles/echoclient_unittest.dir/build
 .PHONY : echoclient_unittest/fast
 
 # Convenience name for target.
 muduo/net/tests/CMakeFiles/buffer_unittest.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/buffer_unittest.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/buffer_unittest.dir/rule
 .PHONY : muduo/net/tests/CMakeFiles/buffer_unittest.dir/rule
 
 # Convenience name for target.
@@ -258,12 +258,12 @@ buffer_unittest: muduo/net/tests/CMakeFiles/buffer_unittest.dir/rule
 
 # fast build rule for target.
 buffer_unittest/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/buffer_unittest.dir/build.make muduo/net/tests/CMakeFiles/buffer_unittest.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/buffer_unittest.dir/build.make muduo/net/tests/CMakeFiles/buffer_unittest.dir/build
 .PHONY : buffer_unittest/fast
 
 # Convenience name for target.
 muduo/net/tests/CMakeFiles/gzipstream_unittest.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/gzipstream_unittest.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/gzipstream_unittest.dir/rule
 .PHONY : muduo/net/tests/CMakeFiles/gzipstream_unittest.dir/rule
 
 # Convenience name for target.
@@ -273,12 +273,12 @@ gzipstream_unittest: muduo/net/tests/CMakeFiles/gzipstream_unittest.dir/rule
 
 # fast build rule for target.
 gzipstream_unittest/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/gzipstream_unittest.dir/build.make muduo/net/tests/CMakeFiles/gzipstream_unittest.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/gzipstream_unittest.dir/build.make muduo/net/tests/CMakeFiles/gzipstream_unittest.dir/build
 .PHONY : gzipstream_unittest/fast
 
 # Convenience name for target.
 muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/rule
 .PHONY : muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/rule
 
 # Convenience name for target.
@@ -288,12 +288,12 @@ eventloopthreadpool_unittest: muduo/net/tests/CMakeFiles/eventloopthreadpool_uni
 
 # fast build rule for target.
 eventloopthreadpool_unittest/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/build
 .PHONY : eventloopthreadpool_unittest/fast
 
 # Convenience name for target.
 muduo/net/tests/CMakeFiles/echoserver_unittest.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/echoserver_unittest.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/echoserver_unittest.dir/rule
 .PHONY : muduo/net/tests/CMakeFiles/echoserver_unittest.dir/rule
 
 # Convenience name for target.
@@ -303,12 +303,12 @@ echoserver_unittest: muduo/net/tests/CMakeFiles/echoserver_unittest.dir/rule
 
 # fast build rule for target.
 echoserver_unittest/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/echoserver_unittest.dir/build.make muduo/net/tests/CMakeFiles/echoserver_unittest.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/echoserver_unittest.dir/build.make muduo/net/tests/CMakeFiles/echoserver_unittest.dir/build
 .PHONY : echoserver_unittest/fast
 
 # Convenience name for target.
 muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/rule
 .PHONY : muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/rule
 
 # Convenience name for target.
@@ -318,7 +318,7 @@ inetaddress_unittest: muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/rule
 
 # fast build rule for target.
 inetaddress_unittest/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/build.make muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/build.make muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/build
 .PHONY : inetaddress_unittest/fast
 
 Buffer_unittest.o: Buffer_unittest.cc.o
@@ -327,8 +327,8 @@ Buffer_unittest.o: Buffer_unittest.cc.o
 
 # target to build an object file
 Buffer_unittest.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/build.make muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/Buffer_unittest.cc.o
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/buffer_unittest.dir/build.make muduo/net/tests/CMakeFiles/buffer_unittest.dir/Buffer_unittest.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/build.make muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/Buffer_unittest.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/buffer_unittest.dir/build.make muduo/net/tests/CMakeFiles/buffer_unittest.dir/Buffer_unittest.cc.o
 .PHONY : Buffer_unittest.cc.o
 
 Buffer_unittest.i: Buffer_unittest.cc.i
@@ -337,8 +337,8 @@ Buffer_unittest.i: Buffer_unittest.cc.i
 
 # target to preprocess a source file
 Buffer_unittest.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/build.make muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/Buffer_unittest.cc.i
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/buffer_unittest.dir/build.make muduo/net/tests/CMakeFiles/buffer_unittest.dir/Buffer_unittest.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/build.make muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/Buffer_unittest.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/buffer_unittest.dir/build.make muduo/net/tests/CMakeFiles/buffer_unittest.dir/Buffer_unittest.cc.i
 .PHONY : Buffer_unittest.cc.i
 
 Buffer_unittest.s: Buffer_unittest.cc.s
@@ -347,8 +347,8 @@ Buffer_unittest.s: Buffer_unittest.cc.s
 
 # target to generate assembly for a file
 Buffer_unittest.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/build.make muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/Buffer_unittest.cc.s
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/buffer_unittest.dir/build.make muduo/net/tests/CMakeFiles/buffer_unittest.dir/Buffer_unittest.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/build.make muduo/net/tests/CMakeFiles/buffer_cpp11_unittest.dir/Buffer_unittest.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/buffer_unittest.dir/build.make muduo/net/tests/CMakeFiles/buffer_unittest.dir/Buffer_unittest.cc.s
 .PHONY : Buffer_unittest.cc.s
 
 EchoClient_unittest.o: EchoClient_unittest.cc.o
@@ -357,7 +357,7 @@ EchoClient_unittest.o: EchoClient_unittest.cc.o
 
 # target to build an object file
 EchoClient_unittest.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/echoclient_unittest.dir/build.make muduo/net/tests/CMakeFiles/echoclient_unittest.dir/EchoClient_unittest.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/echoclient_unittest.dir/build.make muduo/net/tests/CMakeFiles/echoclient_unittest.dir/EchoClient_unittest.cc.o
 .PHONY : EchoClient_unittest.cc.o
 
 EchoClient_unittest.i: EchoClient_unittest.cc.i
@@ -366,7 +366,7 @@ EchoClient_unittest.i: EchoClient_unittest.cc.i
 
 # target to preprocess a source file
 EchoClient_unittest.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/echoclient_unittest.dir/build.make muduo/net/tests/CMakeFiles/echoclient_unittest.dir/EchoClient_unittest.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/echoclient_unittest.dir/build.make muduo/net/tests/CMakeFiles/echoclient_unittest.dir/EchoClient_unittest.cc.i
 .PHONY : EchoClient_unittest.cc.i
 
 EchoClient_unittest.s: EchoClient_unittest.cc.s
@@ -375,7 +375,7 @@ EchoClient_unittest.s: EchoClient_unittest.cc.s
 
 # target to generate assembly for a file
 EchoClient_unittest.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/echoclient_unittest.dir/build.make muduo/net/tests/CMakeFiles/echoclient_unittest.dir/EchoClient_unittest.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/echoclient_unittest.dir/build.make muduo/net/tests/CMakeFiles/echoclient_unittest.dir/EchoClient_unittest.cc.s
 .PHONY : EchoClient_unittest.cc.s
 
 EchoServer_unittest.o: EchoServer_unittest.cc.o
@@ -384,7 +384,7 @@ EchoServer_unittest.o: EchoServer_unittest.cc.o
 
 # target to build an object file
 EchoServer_unittest.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/echoserver_unittest.dir/build.make muduo/net/tests/CMakeFiles/echoserver_unittest.dir/EchoServer_unittest.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/echoserver_unittest.dir/build.make muduo/net/tests/CMakeFiles/echoserver_unittest.dir/EchoServer_unittest.cc.o
 .PHONY : EchoServer_unittest.cc.o
 
 EchoServer_unittest.i: EchoServer_unittest.cc.i
@@ -393,7 +393,7 @@ EchoServer_unittest.i: EchoServer_unittest.cc.i
 
 # target to preprocess a source file
 EchoServer_unittest.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/echoserver_unittest.dir/build.make muduo/net/tests/CMakeFiles/echoserver_unittest.dir/EchoServer_unittest.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/echoserver_unittest.dir/build.make muduo/net/tests/CMakeFiles/echoserver_unittest.dir/EchoServer_unittest.cc.i
 .PHONY : EchoServer_unittest.cc.i
 
 EchoServer_unittest.s: EchoServer_unittest.cc.s
@@ -402,7 +402,7 @@ EchoServer_unittest.s: EchoServer_unittest.cc.s
 
 # target to generate assembly for a file
 EchoServer_unittest.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/echoserver_unittest.dir/build.make muduo/net/tests/CMakeFiles/echoserver_unittest.dir/EchoServer_unittest.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/echoserver_unittest.dir/build.make muduo/net/tests/CMakeFiles/echoserver_unittest.dir/EchoServer_unittest.cc.s
 .PHONY : EchoServer_unittest.cc.s
 
 EventLoopThreadPool_unittest.o: EventLoopThreadPool_unittest.cc.o
@@ -411,7 +411,7 @@ EventLoopThreadPool_unittest.o: EventLoopThreadPool_unittest.cc.o
 
 # target to build an object file
 EventLoopThreadPool_unittest.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/EventLoopThreadPool_unittest.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/EventLoopThreadPool_unittest.cc.o
 .PHONY : EventLoopThreadPool_unittest.cc.o
 
 EventLoopThreadPool_unittest.i: EventLoopThreadPool_unittest.cc.i
@@ -420,7 +420,7 @@ EventLoopThreadPool_unittest.i: EventLoopThreadPool_unittest.cc.i
 
 # target to preprocess a source file
 EventLoopThreadPool_unittest.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/EventLoopThreadPool_unittest.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/EventLoopThreadPool_unittest.cc.i
 .PHONY : EventLoopThreadPool_unittest.cc.i
 
 EventLoopThreadPool_unittest.s: EventLoopThreadPool_unittest.cc.s
@@ -429,7 +429,7 @@ EventLoopThreadPool_unittest.s: EventLoopThreadPool_unittest.cc.s
 
 # target to generate assembly for a file
 EventLoopThreadPool_unittest.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/EventLoopThreadPool_unittest.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloopthreadpool_unittest.dir/EventLoopThreadPool_unittest.cc.s
 .PHONY : EventLoopThreadPool_unittest.cc.s
 
 EventLoopThread_unittest.o: EventLoopThread_unittest.cc.o
@@ -438,7 +438,7 @@ EventLoopThread_unittest.o: EventLoopThread_unittest.cc.o
 
 # target to build an object file
 EventLoopThread_unittest.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/EventLoopThread_unittest.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/EventLoopThread_unittest.cc.o
 .PHONY : EventLoopThread_unittest.cc.o
 
 EventLoopThread_unittest.i: EventLoopThread_unittest.cc.i
@@ -447,7 +447,7 @@ EventLoopThread_unittest.i: EventLoopThread_unittest.cc.i
 
 # target to preprocess a source file
 EventLoopThread_unittest.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/EventLoopThread_unittest.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/EventLoopThread_unittest.cc.i
 .PHONY : EventLoopThread_unittest.cc.i
 
 EventLoopThread_unittest.s: EventLoopThread_unittest.cc.s
@@ -456,7 +456,7 @@ EventLoopThread_unittest.s: EventLoopThread_unittest.cc.s
 
 # target to generate assembly for a file
 EventLoopThread_unittest.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/EventLoopThread_unittest.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloopthread_unittest.dir/EventLoopThread_unittest.cc.s
 .PHONY : EventLoopThread_unittest.cc.s
 
 EventLoop_unittest.o: EventLoop_unittest.cc.o
@@ -465,7 +465,7 @@ EventLoop_unittest.o: EventLoop_unittest.cc.o
 
 # target to build an object file
 EventLoop_unittest.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloop_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloop_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.o
 .PHONY : EventLoop_unittest.cc.o
 
 EventLoop_unittest.i: EventLoop_unittest.cc.i
@@ -474,7 +474,7 @@ EventLoop_unittest.i: EventLoop_unittest.cc.i
 
 # target to preprocess a source file
 EventLoop_unittest.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloop_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloop_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.i
 .PHONY : EventLoop_unittest.cc.i
 
 EventLoop_unittest.s: EventLoop_unittest.cc.s
@@ -483,7 +483,7 @@ EventLoop_unittest.s: EventLoop_unittest.cc.s
 
 # target to generate assembly for a file
 EventLoop_unittest.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloop_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/eventloop_unittest.dir/build.make muduo/net/tests/CMakeFiles/eventloop_unittest.dir/EventLoop_unittest.cc.s
 .PHONY : EventLoop_unittest.cc.s
 
 GzipStream_unittest.o: GzipStream_unittest.cc.o
@@ -492,7 +492,7 @@ GzipStream_unittest.o: GzipStream_unittest.cc.o
 
 # target to build an object file
 GzipStream_unittest.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/gzipstream_unittest.dir/build.make muduo/net/tests/CMakeFiles/gzipstream_unittest.dir/GzipStream_unittest.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/gzipstream_unittest.dir/build.make muduo/net/tests/CMakeFiles/gzipstream_unittest.dir/GzipStream_unittest.cc.o
 .PHONY : GzipStream_unittest.cc.o
 
 GzipStream_unittest.i: GzipStream_unittest.cc.i
@@ -501,7 +501,7 @@ GzipStream_unittest.i: GzipStream_unittest.cc.i
 
 # target to preprocess a source file
 GzipStream_unittest.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/gzipstream_unittest.dir/build.make muduo/net/tests/CMakeFiles/gzipstream_unittest.dir/GzipStream_unittest.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/gzipstream_unittest.dir/build.make muduo/net/tests/CMakeFiles/gzipstream_unittest.dir/GzipStream_unittest.cc.i
 .PHONY : GzipStream_unittest.cc.i
 
 GzipStream_unittest.s: GzipStream_unittest.cc.s
@@ -510,7 +510,7 @@ GzipStream_unittest.s: GzipStream_unittest.cc.s
 
 # target to generate assembly for a file
 GzipStream_unittest.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/gzipstream_unittest.dir/build.make muduo/net/tests/CMakeFiles/gzipstream_unittest.dir/GzipStream_unittest.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/gzipstream_unittest.dir/build.make muduo/net/tests/CMakeFiles/gzipstream_unittest.dir/GzipStream_unittest.cc.s
 .PHONY : GzipStream_unittest.cc.s
 
 InetAddress_unittest.o: InetAddress_unittest.cc.o
@@ -519,7 +519,7 @@ InetAddress_unittest.o: InetAddress_unittest.cc.o
 
 # target to build an object file
 InetAddress_unittest.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/build.make muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/InetAddress_unittest.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/build.make muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/InetAddress_unittest.cc.o
 .PHONY : InetAddress_unittest.cc.o
 
 InetAddress_unittest.i: InetAddress_unittest.cc.i
@@ -528,7 +528,7 @@ InetAddress_unittest.i: InetAddress_unittest.cc.i
 
 # target to preprocess a source file
 InetAddress_unittest.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/build.make muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/InetAddress_unittest.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/build.make muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/InetAddress_unittest.cc.i
 .PHONY : InetAddress_unittest.cc.i
 
 InetAddress_unittest.s: InetAddress_unittest.cc.s
@@ -537,7 +537,7 @@ InetAddress_unittest.s: InetAddress_unittest.cc.s
 
 # target to generate assembly for a file
 InetAddress_unittest.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/build.make muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/InetAddress_unittest.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/build.make muduo/net/tests/CMakeFiles/inetaddress_unittest.dir/InetAddress_unittest.cc.s
 .PHONY : InetAddress_unittest.cc.s
 
 TcpClient_reg1.o: TcpClient_reg1.cc.o
@@ -546,7 +546,7 @@ TcpClient_reg1.o: TcpClient_reg1.cc.o
 
 # target to build an object file
 TcpClient_reg1.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/build.make muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/build.make muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.o
 .PHONY : TcpClient_reg1.cc.o
 
 TcpClient_reg1.i: TcpClient_reg1.cc.i
@@ -555,7 +555,7 @@ TcpClient_reg1.i: TcpClient_reg1.cc.i
 
 # target to preprocess a source file
 TcpClient_reg1.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/build.make muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/build.make muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.i
 .PHONY : TcpClient_reg1.cc.i
 
 TcpClient_reg1.s: TcpClient_reg1.cc.s
@@ -564,7 +564,7 @@ TcpClient_reg1.s: TcpClient_reg1.cc.s
 
 # target to generate assembly for a file
 TcpClient_reg1.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/build.make muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/build.make muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/TcpClient_reg1.cc.s
 .PHONY : TcpClient_reg1.cc.s
 
 TimerQueue_unittest.o: TimerQueue_unittest.cc.o
@@ -573,7 +573,7 @@ TimerQueue_unittest.o: TimerQueue_unittest.cc.o
 
 # target to build an object file
 TimerQueue_unittest.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/build.make muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/build.make muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.o
 .PHONY : TimerQueue_unittest.cc.o
 
 TimerQueue_unittest.i: TimerQueue_unittest.cc.i
@@ -582,7 +582,7 @@ TimerQueue_unittest.i: TimerQueue_unittest.cc.i
 
 # target to preprocess a source file
 TimerQueue_unittest.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/build.make muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/build.make muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.i
 .PHONY : TimerQueue_unittest.cc.i
 
 TimerQueue_unittest.s: TimerQueue_unittest.cc.s
@@ -591,7 +591,7 @@ TimerQueue_unittest.s: TimerQueue_unittest.cc.s
 
 # target to generate assembly for a file
 TimerQueue_unittest.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/build.make muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/build.make muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/TimerQueue_unittest.cc.s
 .PHONY : TimerQueue_unittest.cc.s
 
 # Help Target
@@ -658,6 +658,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

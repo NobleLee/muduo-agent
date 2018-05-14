@@ -6,5 +6,5 @@ CXX_FLAGS = -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/include -I/home/gaoguili/Desktop/muduo-1.0.1 
+CXX_INCLUDES = -I/usr/local/include -I/home/gaoguili/CLionProjects/muduo-agent 
 

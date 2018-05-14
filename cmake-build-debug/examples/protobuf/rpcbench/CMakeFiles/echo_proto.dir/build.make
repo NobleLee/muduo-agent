@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gaoguili/Desktop/muduo-1.0.1
+CMAKE_SOURCE_DIR = /home/gaoguili/CLionProjects/muduo-agent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/depend.make
@@ -58,24 +58,24 @@ include examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/progress.make
 include examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/flags.make
 
 examples/protobuf/rpcbench/echo.pb.cc: ../examples/protobuf/rpcbench/echo.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating echo.pb.cc, echo.pb.h"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/protobuf/rpcbench && protoc --cpp_out . /home/gaoguili/Desktop/muduo-1.0.1/examples/protobuf/rpcbench/echo.proto -I/home/gaoguili/Desktop/muduo-1.0.1/examples/protobuf/rpcbench
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating echo.pb.cc, echo.pb.h"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/protobuf/rpcbench && protoc --cpp_out . /home/gaoguili/CLionProjects/muduo-agent/examples/protobuf/rpcbench/echo.proto -I/home/gaoguili/CLionProjects/muduo-agent/examples/protobuf/rpcbench
 
 examples/protobuf/rpcbench/echo.pb.h: examples/protobuf/rpcbench/echo.pb.cc
 	@$(CMAKE_COMMAND) -E touch_nocreate examples/protobuf/rpcbench/echo.pb.h
 
 examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/echo.pb.cc.o: examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/flags.make
 examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/echo.pb.cc.o: examples/protobuf/rpcbench/echo.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/echo.pb.cc.o"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/protobuf/rpcbench && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-conversion -Wno-shadow -o CMakeFiles/echo_proto.dir/echo.pb.cc.o -c /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/protobuf/rpcbench/echo.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/echo.pb.cc.o"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/protobuf/rpcbench && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-conversion -Wno-shadow -o CMakeFiles/echo_proto.dir/echo.pb.cc.o -c /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/protobuf/rpcbench/echo.pb.cc
 
 examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/echo.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/echo_proto.dir/echo.pb.cc.i"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/protobuf/rpcbench && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-conversion -Wno-shadow -E /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/protobuf/rpcbench/echo.pb.cc > CMakeFiles/echo_proto.dir/echo.pb.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/protobuf/rpcbench && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-conversion -Wno-shadow -E /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/protobuf/rpcbench/echo.pb.cc > CMakeFiles/echo_proto.dir/echo.pb.cc.i
 
 examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/echo.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/echo_proto.dir/echo.pb.cc.s"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/protobuf/rpcbench && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-conversion -Wno-shadow -S /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/protobuf/rpcbench/echo.pb.cc -o CMakeFiles/echo_proto.dir/echo.pb.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/protobuf/rpcbench && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-conversion -Wno-shadow -S /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/protobuf/rpcbench/echo.pb.cc -o CMakeFiles/echo_proto.dir/echo.pb.cc.s
 
 examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/echo.pb.cc.o.requires:
 
@@ -98,9 +98,9 @@ echo_proto_EXTERNAL_OBJECTS =
 lib/libecho_proto.a: examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/echo.pb.cc.o
 lib/libecho_proto.a: examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/build.make
 lib/libecho_proto.a: examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../../../lib/libecho_proto.a"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/protobuf/rpcbench && $(CMAKE_COMMAND) -P CMakeFiles/echo_proto.dir/cmake_clean_target.cmake
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/protobuf/rpcbench && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/echo_proto.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../../../lib/libecho_proto.a"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/protobuf/rpcbench && $(CMAKE_COMMAND) -P CMakeFiles/echo_proto.dir/cmake_clean_target.cmake
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/protobuf/rpcbench && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/echo_proto.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/build: lib/libecho_proto.a
@@ -112,11 +112,11 @@ examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/requires: examples/protobuf
 .PHONY : examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/requires
 
 examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/clean:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/protobuf/rpcbench && $(CMAKE_COMMAND) -P CMakeFiles/echo_proto.dir/cmake_clean.cmake
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/protobuf/rpcbench && $(CMAKE_COMMAND) -P CMakeFiles/echo_proto.dir/cmake_clean.cmake
 .PHONY : examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/clean
 
 examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/depend: examples/protobuf/rpcbench/echo.pb.cc
 examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/depend: examples/protobuf/rpcbench/echo.pb.h
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/Desktop/muduo-1.0.1 /home/gaoguili/Desktop/muduo-1.0.1/examples/protobuf/rpcbench /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/protobuf/rpcbench /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/CLionProjects/muduo-agent /home/gaoguili/CLionProjects/muduo-agent/examples/protobuf/rpcbench /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/protobuf/rpcbench /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/depend
 

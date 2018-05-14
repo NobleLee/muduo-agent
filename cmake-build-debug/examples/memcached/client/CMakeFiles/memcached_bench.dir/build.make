@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gaoguili/Desktop/muduo-1.0.1
+CMAKE_SOURCE_DIR = /home/gaoguili/CLionProjects/muduo-agent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include examples/memcached/client/CMakeFiles/memcached_bench.dir/depend.make
@@ -59,16 +59,16 @@ include examples/memcached/client/CMakeFiles/memcached_bench.dir/flags.make
 
 examples/memcached/client/CMakeFiles/memcached_bench.dir/bench.cc.o: examples/memcached/client/CMakeFiles/memcached_bench.dir/flags.make
 examples/memcached/client/CMakeFiles/memcached_bench.dir/bench.cc.o: ../examples/memcached/client/bench.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/memcached/client/CMakeFiles/memcached_bench.dir/bench.cc.o"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/memcached/client && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/memcached_bench.dir/bench.cc.o -c /home/gaoguili/Desktop/muduo-1.0.1/examples/memcached/client/bench.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/memcached/client/CMakeFiles/memcached_bench.dir/bench.cc.o"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/memcached/client && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/memcached_bench.dir/bench.cc.o -c /home/gaoguili/CLionProjects/muduo-agent/examples/memcached/client/bench.cc
 
 examples/memcached/client/CMakeFiles/memcached_bench.dir/bench.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/memcached_bench.dir/bench.cc.i"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/memcached/client && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/Desktop/muduo-1.0.1/examples/memcached/client/bench.cc > CMakeFiles/memcached_bench.dir/bench.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/memcached/client && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/CLionProjects/muduo-agent/examples/memcached/client/bench.cc > CMakeFiles/memcached_bench.dir/bench.cc.i
 
 examples/memcached/client/CMakeFiles/memcached_bench.dir/bench.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/memcached_bench.dir/bench.cc.s"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/memcached/client && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/Desktop/muduo-1.0.1/examples/memcached/client/bench.cc -o CMakeFiles/memcached_bench.dir/bench.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/memcached/client && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/CLionProjects/muduo-agent/examples/memcached/client/bench.cc -o CMakeFiles/memcached_bench.dir/bench.cc.s
 
 examples/memcached/client/CMakeFiles/memcached_bench.dir/bench.cc.o.requires:
 
@@ -93,8 +93,8 @@ bin/memcached_bench: examples/memcached/client/CMakeFiles/memcached_bench.dir/bu
 bin/memcached_bench: lib/libmuduo_net.a
 bin/memcached_bench: lib/libmuduo_base.a
 bin/memcached_bench: examples/memcached/client/CMakeFiles/memcached_bench.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../../bin/memcached_bench"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/memcached/client && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/memcached_bench.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../../bin/memcached_bench"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/memcached/client && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/memcached_bench.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/memcached/client/CMakeFiles/memcached_bench.dir/build: bin/memcached_bench
@@ -106,10 +106,10 @@ examples/memcached/client/CMakeFiles/memcached_bench.dir/requires: examples/memc
 .PHONY : examples/memcached/client/CMakeFiles/memcached_bench.dir/requires
 
 examples/memcached/client/CMakeFiles/memcached_bench.dir/clean:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/memcached/client && $(CMAKE_COMMAND) -P CMakeFiles/memcached_bench.dir/cmake_clean.cmake
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/memcached/client && $(CMAKE_COMMAND) -P CMakeFiles/memcached_bench.dir/cmake_clean.cmake
 .PHONY : examples/memcached/client/CMakeFiles/memcached_bench.dir/clean
 
 examples/memcached/client/CMakeFiles/memcached_bench.dir/depend:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/Desktop/muduo-1.0.1 /home/gaoguili/Desktop/muduo-1.0.1/examples/memcached/client /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/memcached/client /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/memcached/client/CMakeFiles/memcached_bench.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/CLionProjects/muduo-agent /home/gaoguili/CLionProjects/muduo-agent/examples/memcached/client /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/memcached/client /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/memcached/client/CMakeFiles/memcached_bench.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/memcached/client/CMakeFiles/memcached_bench.dir/depend
 

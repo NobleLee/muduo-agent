@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gaoguili/Desktop/muduo-1.0.1
+CMAKE_SOURCE_DIR = /home/gaoguili/CLionProjects/muduo-agent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,37 +59,37 @@ CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -105,7 +105,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -116,7 +116,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -126,14 +126,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/filetransfer/CMakeFiles/progress.marks
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/filetransfer/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles 0
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/filetransfer/CMakeFiles/progress.marks
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/filetransfer/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/filetransfer/clean
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/filetransfer/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/filetransfer/preinstall
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/filetransfer/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/filetransfer/preinstall
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/filetransfer/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 examples/filetransfer/CMakeFiles/filetransfer_download.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/filetransfer/CMakeFiles/filetransfer_download.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/filetransfer/CMakeFiles/filetransfer_download.dir/rule
 .PHONY : examples/filetransfer/CMakeFiles/filetransfer_download.dir/rule
 
 # Convenience name for target.
@@ -168,12 +168,12 @@ filetransfer_download: examples/filetransfer/CMakeFiles/filetransfer_download.di
 
 # fast build rule for target.
 filetransfer_download/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/filetransfer/CMakeFiles/filetransfer_download.dir/build.make examples/filetransfer/CMakeFiles/filetransfer_download.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/filetransfer/CMakeFiles/filetransfer_download.dir/build.make examples/filetransfer/CMakeFiles/filetransfer_download.dir/build
 .PHONY : filetransfer_download/fast
 
 # Convenience name for target.
 examples/filetransfer/CMakeFiles/filetransfer_download3.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/filetransfer/CMakeFiles/filetransfer_download3.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/filetransfer/CMakeFiles/filetransfer_download3.dir/rule
 .PHONY : examples/filetransfer/CMakeFiles/filetransfer_download3.dir/rule
 
 # Convenience name for target.
@@ -183,12 +183,12 @@ filetransfer_download3: examples/filetransfer/CMakeFiles/filetransfer_download3.
 
 # fast build rule for target.
 filetransfer_download3/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/filetransfer/CMakeFiles/filetransfer_download3.dir/build.make examples/filetransfer/CMakeFiles/filetransfer_download3.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/filetransfer/CMakeFiles/filetransfer_download3.dir/build.make examples/filetransfer/CMakeFiles/filetransfer_download3.dir/build
 .PHONY : filetransfer_download3/fast
 
 # Convenience name for target.
 examples/filetransfer/CMakeFiles/filetransfer_download2.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/filetransfer/CMakeFiles/filetransfer_download2.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/filetransfer/CMakeFiles/filetransfer_download2.dir/rule
 .PHONY : examples/filetransfer/CMakeFiles/filetransfer_download2.dir/rule
 
 # Convenience name for target.
@@ -198,7 +198,7 @@ filetransfer_download2: examples/filetransfer/CMakeFiles/filetransfer_download2.
 
 # fast build rule for target.
 filetransfer_download2/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/filetransfer/CMakeFiles/filetransfer_download2.dir/build.make examples/filetransfer/CMakeFiles/filetransfer_download2.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/filetransfer/CMakeFiles/filetransfer_download2.dir/build.make examples/filetransfer/CMakeFiles/filetransfer_download2.dir/build
 .PHONY : filetransfer_download2/fast
 
 download.o: download.cc.o
@@ -207,7 +207,7 @@ download.o: download.cc.o
 
 # target to build an object file
 download.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/filetransfer/CMakeFiles/filetransfer_download.dir/build.make examples/filetransfer/CMakeFiles/filetransfer_download.dir/download.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/filetransfer/CMakeFiles/filetransfer_download.dir/build.make examples/filetransfer/CMakeFiles/filetransfer_download.dir/download.cc.o
 .PHONY : download.cc.o
 
 download.i: download.cc.i
@@ -216,7 +216,7 @@ download.i: download.cc.i
 
 # target to preprocess a source file
 download.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/filetransfer/CMakeFiles/filetransfer_download.dir/build.make examples/filetransfer/CMakeFiles/filetransfer_download.dir/download.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/filetransfer/CMakeFiles/filetransfer_download.dir/build.make examples/filetransfer/CMakeFiles/filetransfer_download.dir/download.cc.i
 .PHONY : download.cc.i
 
 download.s: download.cc.s
@@ -225,7 +225,7 @@ download.s: download.cc.s
 
 # target to generate assembly for a file
 download.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/filetransfer/CMakeFiles/filetransfer_download.dir/build.make examples/filetransfer/CMakeFiles/filetransfer_download.dir/download.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/filetransfer/CMakeFiles/filetransfer_download.dir/build.make examples/filetransfer/CMakeFiles/filetransfer_download.dir/download.cc.s
 .PHONY : download.cc.s
 
 download2.o: download2.cc.o
@@ -234,7 +234,7 @@ download2.o: download2.cc.o
 
 # target to build an object file
 download2.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/filetransfer/CMakeFiles/filetransfer_download2.dir/build.make examples/filetransfer/CMakeFiles/filetransfer_download2.dir/download2.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/filetransfer/CMakeFiles/filetransfer_download2.dir/build.make examples/filetransfer/CMakeFiles/filetransfer_download2.dir/download2.cc.o
 .PHONY : download2.cc.o
 
 download2.i: download2.cc.i
@@ -243,7 +243,7 @@ download2.i: download2.cc.i
 
 # target to preprocess a source file
 download2.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/filetransfer/CMakeFiles/filetransfer_download2.dir/build.make examples/filetransfer/CMakeFiles/filetransfer_download2.dir/download2.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/filetransfer/CMakeFiles/filetransfer_download2.dir/build.make examples/filetransfer/CMakeFiles/filetransfer_download2.dir/download2.cc.i
 .PHONY : download2.cc.i
 
 download2.s: download2.cc.s
@@ -252,7 +252,7 @@ download2.s: download2.cc.s
 
 # target to generate assembly for a file
 download2.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/filetransfer/CMakeFiles/filetransfer_download2.dir/build.make examples/filetransfer/CMakeFiles/filetransfer_download2.dir/download2.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/filetransfer/CMakeFiles/filetransfer_download2.dir/build.make examples/filetransfer/CMakeFiles/filetransfer_download2.dir/download2.cc.s
 .PHONY : download2.cc.s
 
 download3.o: download3.cc.o
@@ -261,7 +261,7 @@ download3.o: download3.cc.o
 
 # target to build an object file
 download3.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/filetransfer/CMakeFiles/filetransfer_download3.dir/build.make examples/filetransfer/CMakeFiles/filetransfer_download3.dir/download3.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/filetransfer/CMakeFiles/filetransfer_download3.dir/build.make examples/filetransfer/CMakeFiles/filetransfer_download3.dir/download3.cc.o
 .PHONY : download3.cc.o
 
 download3.i: download3.cc.i
@@ -270,7 +270,7 @@ download3.i: download3.cc.i
 
 # target to preprocess a source file
 download3.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/filetransfer/CMakeFiles/filetransfer_download3.dir/build.make examples/filetransfer/CMakeFiles/filetransfer_download3.dir/download3.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/filetransfer/CMakeFiles/filetransfer_download3.dir/build.make examples/filetransfer/CMakeFiles/filetransfer_download3.dir/download3.cc.i
 .PHONY : download3.cc.i
 
 download3.s: download3.cc.s
@@ -279,7 +279,7 @@ download3.s: download3.cc.s
 
 # target to generate assembly for a file
 download3.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/filetransfer/CMakeFiles/filetransfer_download3.dir/build.make examples/filetransfer/CMakeFiles/filetransfer_download3.dir/download3.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/filetransfer/CMakeFiles/filetransfer_download3.dir/build.make examples/filetransfer/CMakeFiles/filetransfer_download3.dir/download3.cc.s
 .PHONY : download3.cc.s
 
 # Help Target
@@ -317,6 +317,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

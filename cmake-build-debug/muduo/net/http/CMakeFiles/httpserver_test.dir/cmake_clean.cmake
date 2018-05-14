@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/httpserver_test.dir/tests/HttpServer_test.cc.o"
+  "CMakeFiles/httpserver_test.dir/tests/HttpAgentConsumer.cpp.o"
   "../../../bin/httpserver_test.pdb"
   "../../../bin/httpserver_test"
 )

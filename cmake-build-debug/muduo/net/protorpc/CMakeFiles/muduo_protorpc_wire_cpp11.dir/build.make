@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gaoguili/Desktop/muduo-1.0.1
+CMAKE_SOURCE_DIR = /home/gaoguili/CLionProjects/muduo-agent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/depend.make
@@ -58,24 +58,24 @@ include muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/progress.mak
 include muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/flags.make
 
 muduo/net/protorpc/rpc.pb.cc: ../muduo/net/protorpc/rpc.proto
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating rpc.pb.cc, rpc.pb.h"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/protorpc && protoc --cpp_out . /home/gaoguili/Desktop/muduo-1.0.1/muduo/net/protorpc/rpc.proto -I/home/gaoguili/Desktop/muduo-1.0.1/muduo/net/protorpc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating rpc.pb.cc, rpc.pb.h"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/protorpc && protoc --cpp_out . /home/gaoguili/CLionProjects/muduo-agent/muduo/net/protorpc/rpc.proto -I/home/gaoguili/CLionProjects/muduo-agent/muduo/net/protorpc
 
 muduo/net/protorpc/rpc.pb.h: muduo/net/protorpc/rpc.pb.cc
 	@$(CMAKE_COMMAND) -E touch_nocreate muduo/net/protorpc/rpc.pb.h
 
 muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/rpc.pb.cc.o: muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/flags.make
 muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/rpc.pb.cc.o: muduo/net/protorpc/rpc.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/rpc.pb.cc.o"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/protorpc && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-conversion -o CMakeFiles/muduo_protorpc_wire_cpp11.dir/rpc.pb.cc.o -c /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/protorpc/rpc.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/rpc.pb.cc.o"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/protorpc && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-conversion -o CMakeFiles/muduo_protorpc_wire_cpp11.dir/rpc.pb.cc.o -c /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/protorpc/rpc.pb.cc
 
 muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/rpc.pb.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/muduo_protorpc_wire_cpp11.dir/rpc.pb.cc.i"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/protorpc && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-conversion -E /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/protorpc/rpc.pb.cc > CMakeFiles/muduo_protorpc_wire_cpp11.dir/rpc.pb.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/protorpc && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-conversion -E /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/protorpc/rpc.pb.cc > CMakeFiles/muduo_protorpc_wire_cpp11.dir/rpc.pb.cc.i
 
 muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/rpc.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/muduo_protorpc_wire_cpp11.dir/rpc.pb.cc.s"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/protorpc && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-conversion -S /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/protorpc/rpc.pb.cc -o CMakeFiles/muduo_protorpc_wire_cpp11.dir/rpc.pb.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/protorpc && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -Wno-conversion -S /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/protorpc/rpc.pb.cc -o CMakeFiles/muduo_protorpc_wire_cpp11.dir/rpc.pb.cc.s
 
 muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/rpc.pb.cc.o.requires:
 
@@ -90,16 +90,16 @@ muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/rpc.pb.cc.o.provides
 
 muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/RpcCodec.cc.o: muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/flags.make
 muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/RpcCodec.cc.o: ../muduo/net/protorpc/RpcCodec.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/RpcCodec.cc.o"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/protorpc && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/muduo_protorpc_wire_cpp11.dir/RpcCodec.cc.o -c /home/gaoguili/Desktop/muduo-1.0.1/muduo/net/protorpc/RpcCodec.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/RpcCodec.cc.o"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/protorpc && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/muduo_protorpc_wire_cpp11.dir/RpcCodec.cc.o -c /home/gaoguili/CLionProjects/muduo-agent/muduo/net/protorpc/RpcCodec.cc
 
 muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/RpcCodec.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/muduo_protorpc_wire_cpp11.dir/RpcCodec.cc.i"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/protorpc && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/Desktop/muduo-1.0.1/muduo/net/protorpc/RpcCodec.cc > CMakeFiles/muduo_protorpc_wire_cpp11.dir/RpcCodec.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/protorpc && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/CLionProjects/muduo-agent/muduo/net/protorpc/RpcCodec.cc > CMakeFiles/muduo_protorpc_wire_cpp11.dir/RpcCodec.cc.i
 
 muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/RpcCodec.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/muduo_protorpc_wire_cpp11.dir/RpcCodec.cc.s"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/protorpc && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/Desktop/muduo-1.0.1/muduo/net/protorpc/RpcCodec.cc -o CMakeFiles/muduo_protorpc_wire_cpp11.dir/RpcCodec.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/protorpc && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/CLionProjects/muduo-agent/muduo/net/protorpc/RpcCodec.cc -o CMakeFiles/muduo_protorpc_wire_cpp11.dir/RpcCodec.cc.s
 
 muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/RpcCodec.cc.o.requires:
 
@@ -124,9 +124,9 @@ lib/libmuduo_protorpc_wire_cpp11.a: muduo/net/protorpc/CMakeFiles/muduo_protorpc
 lib/libmuduo_protorpc_wire_cpp11.a: muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/RpcCodec.cc.o
 lib/libmuduo_protorpc_wire_cpp11.a: muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/build.make
 lib/libmuduo_protorpc_wire_cpp11.a: muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library ../../../lib/libmuduo_protorpc_wire_cpp11.a"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/protorpc && $(CMAKE_COMMAND) -P CMakeFiles/muduo_protorpc_wire_cpp11.dir/cmake_clean_target.cmake
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/protorpc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/muduo_protorpc_wire_cpp11.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library ../../../lib/libmuduo_protorpc_wire_cpp11.a"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/protorpc && $(CMAKE_COMMAND) -P CMakeFiles/muduo_protorpc_wire_cpp11.dir/cmake_clean_target.cmake
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/protorpc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/muduo_protorpc_wire_cpp11.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/build: lib/libmuduo_protorpc_wire_cpp11.a
@@ -139,11 +139,11 @@ muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/requires: muduo/net/
 .PHONY : muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/requires
 
 muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/clean:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/protorpc && $(CMAKE_COMMAND) -P CMakeFiles/muduo_protorpc_wire_cpp11.dir/cmake_clean.cmake
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/protorpc && $(CMAKE_COMMAND) -P CMakeFiles/muduo_protorpc_wire_cpp11.dir/cmake_clean.cmake
 .PHONY : muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/clean
 
 muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/depend: muduo/net/protorpc/rpc.pb.cc
 muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/depend: muduo/net/protorpc/rpc.pb.h
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/Desktop/muduo-1.0.1 /home/gaoguili/Desktop/muduo-1.0.1/muduo/net/protorpc /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/protorpc /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/CLionProjects/muduo-agent /home/gaoguili/CLionProjects/muduo-agent/muduo/net/protorpc /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/protorpc /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : muduo/net/protorpc/CMakeFiles/muduo_protorpc_wire_cpp11.dir/depend
 

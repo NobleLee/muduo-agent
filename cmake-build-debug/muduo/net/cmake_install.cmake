@@ -1,4 +1,4 @@
-# Install script for directory: /home/gaoguili/Desktop/muduo-1.0.1/muduo/net
+# Install script for directory: /home/gaoguili/CLionProjects/muduo-agent/muduo/net
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,37 +38,35 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/lib/libmuduo_net.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/lib/libmuduo_net.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/lib/libmuduo_net_cpp11.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/lib/libmuduo_net_cpp11.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/muduo/net" TYPE FILE FILES
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/net/Buffer.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/net/Callbacks.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/net/Channel.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/net/Endian.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/net/EventLoop.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/net/EventLoopThread.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/net/EventLoopThreadPool.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/net/InetAddress.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/net/TcpClient.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/net/TcpConnection.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/net/TcpServer.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/net/TimerId.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/net/Buffer.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/net/Callbacks.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/net/Channel.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/net/Endian.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/net/EventLoop.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/net/EventLoopThread.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/net/EventLoopThreadPool.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/net/InetAddress.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/net/TcpClient.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/net/TcpConnection.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/net/TcpServer.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/net/TimerId.h"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/http/cmake_install.cmake")
-  include("/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/inspect/cmake_install.cmake")
-  include("/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/tests/cmake_install.cmake")
-  include("/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/protobuf/cmake_install.cmake")
-  include("/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/protorpc/cmake_install.cmake")
+  include("/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/http/cmake_install.cmake")
+  include("/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/inspect/cmake_install.cmake")
+  include("/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/tests/cmake_install.cmake")
 
 endif()
 

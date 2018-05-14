@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/gaoguili/Desktop/muduo-1.0.1/muduo/net/http/HttpResponse.cc" "/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/http/CMakeFiles/muduo_http.dir/HttpResponse.cc.o"
-  "/home/gaoguili/Desktop/muduo-1.0.1/muduo/net/http/HttpServer.cc" "/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.o"
+  "/home/gaoguili/CLionProjects/muduo-agent/muduo/net/http/HttpResponse.cc" "/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/http/CMakeFiles/muduo_http.dir/HttpResponse.cc.o"
+  "/home/gaoguili/CLionProjects/muduo-agent/muduo/net/http/HttpServer.cc" "/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,8 +17,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/CMakeFiles/muduo_net.dir/DependInfo.cmake"
-  "/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/base/CMakeFiles/muduo_base.dir/DependInfo.cmake"
+  "/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/CMakeFiles/muduo_net.dir/DependInfo.cmake"
+  "/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/base/CMakeFiles/muduo_base.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

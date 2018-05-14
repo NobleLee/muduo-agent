@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gaoguili/Desktop/muduo-1.0.1
+CMAKE_SOURCE_DIR = /home/gaoguili/CLionProjects/muduo-agent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,37 +59,37 @@ CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -105,7 +105,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -116,7 +116,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -126,14 +126,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/memcached/server/CMakeFiles/progress.marks
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/memcached/server/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles 0
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/memcached/server/CMakeFiles/progress.marks
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/memcached/server/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/memcached/server/clean
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/memcached/server/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/memcached/server/preinstall
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/memcached/server/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/memcached/server/preinstall
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/memcached/server/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 examples/memcached/server/CMakeFiles/memcached_debug.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/memcached/server/CMakeFiles/memcached_debug.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/memcached/server/CMakeFiles/memcached_debug.dir/rule
 .PHONY : examples/memcached/server/CMakeFiles/memcached_debug.dir/rule
 
 # Convenience name for target.
@@ -168,12 +168,12 @@ memcached_debug: examples/memcached/server/CMakeFiles/memcached_debug.dir/rule
 
 # fast build rule for target.
 memcached_debug/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_debug.dir/build.make examples/memcached/server/CMakeFiles/memcached_debug.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_debug.dir/build.make examples/memcached/server/CMakeFiles/memcached_debug.dir/build
 .PHONY : memcached_debug/fast
 
 # Convenience name for target.
 examples/memcached/server/CMakeFiles/memcached_footprint.dir/rule:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/memcached/server/CMakeFiles/memcached_footprint.dir/rule
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/memcached/server/CMakeFiles/memcached_footprint.dir/rule
 .PHONY : examples/memcached/server/CMakeFiles/memcached_footprint.dir/rule
 
 # Convenience name for target.
@@ -183,7 +183,7 @@ memcached_footprint: examples/memcached/server/CMakeFiles/memcached_footprint.di
 
 # fast build rule for target.
 memcached_footprint/fast:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/build
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/build
 .PHONY : memcached_footprint/fast
 
 Item.o: Item.cc.o
@@ -192,8 +192,8 @@ Item.o: Item.cc.o
 
 # target to build an object file
 Item.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_debug.dir/build.make examples/memcached/server/CMakeFiles/memcached_debug.dir/Item.cc.o
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/Item.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_debug.dir/build.make examples/memcached/server/CMakeFiles/memcached_debug.dir/Item.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/Item.cc.o
 .PHONY : Item.cc.o
 
 Item.i: Item.cc.i
@@ -202,8 +202,8 @@ Item.i: Item.cc.i
 
 # target to preprocess a source file
 Item.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_debug.dir/build.make examples/memcached/server/CMakeFiles/memcached_debug.dir/Item.cc.i
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/Item.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_debug.dir/build.make examples/memcached/server/CMakeFiles/memcached_debug.dir/Item.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/Item.cc.i
 .PHONY : Item.cc.i
 
 Item.s: Item.cc.s
@@ -212,8 +212,8 @@ Item.s: Item.cc.s
 
 # target to generate assembly for a file
 Item.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_debug.dir/build.make examples/memcached/server/CMakeFiles/memcached_debug.dir/Item.cc.s
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/Item.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_debug.dir/build.make examples/memcached/server/CMakeFiles/memcached_debug.dir/Item.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/Item.cc.s
 .PHONY : Item.cc.s
 
 MemcacheServer.o: MemcacheServer.cc.o
@@ -222,8 +222,8 @@ MemcacheServer.o: MemcacheServer.cc.o
 
 # target to build an object file
 MemcacheServer.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_debug.dir/build.make examples/memcached/server/CMakeFiles/memcached_debug.dir/MemcacheServer.cc.o
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/MemcacheServer.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_debug.dir/build.make examples/memcached/server/CMakeFiles/memcached_debug.dir/MemcacheServer.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/MemcacheServer.cc.o
 .PHONY : MemcacheServer.cc.o
 
 MemcacheServer.i: MemcacheServer.cc.i
@@ -232,8 +232,8 @@ MemcacheServer.i: MemcacheServer.cc.i
 
 # target to preprocess a source file
 MemcacheServer.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_debug.dir/build.make examples/memcached/server/CMakeFiles/memcached_debug.dir/MemcacheServer.cc.i
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/MemcacheServer.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_debug.dir/build.make examples/memcached/server/CMakeFiles/memcached_debug.dir/MemcacheServer.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/MemcacheServer.cc.i
 .PHONY : MemcacheServer.cc.i
 
 MemcacheServer.s: MemcacheServer.cc.s
@@ -242,8 +242,8 @@ MemcacheServer.s: MemcacheServer.cc.s
 
 # target to generate assembly for a file
 MemcacheServer.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_debug.dir/build.make examples/memcached/server/CMakeFiles/memcached_debug.dir/MemcacheServer.cc.s
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/MemcacheServer.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_debug.dir/build.make examples/memcached/server/CMakeFiles/memcached_debug.dir/MemcacheServer.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/MemcacheServer.cc.s
 .PHONY : MemcacheServer.cc.s
 
 Session.o: Session.cc.o
@@ -252,8 +252,8 @@ Session.o: Session.cc.o
 
 # target to build an object file
 Session.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_debug.dir/build.make examples/memcached/server/CMakeFiles/memcached_debug.dir/Session.cc.o
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/Session.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_debug.dir/build.make examples/memcached/server/CMakeFiles/memcached_debug.dir/Session.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/Session.cc.o
 .PHONY : Session.cc.o
 
 Session.i: Session.cc.i
@@ -262,8 +262,8 @@ Session.i: Session.cc.i
 
 # target to preprocess a source file
 Session.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_debug.dir/build.make examples/memcached/server/CMakeFiles/memcached_debug.dir/Session.cc.i
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/Session.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_debug.dir/build.make examples/memcached/server/CMakeFiles/memcached_debug.dir/Session.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/Session.cc.i
 .PHONY : Session.cc.i
 
 Session.s: Session.cc.s
@@ -272,8 +272,8 @@ Session.s: Session.cc.s
 
 # target to generate assembly for a file
 Session.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_debug.dir/build.make examples/memcached/server/CMakeFiles/memcached_debug.dir/Session.cc.s
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/Session.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_debug.dir/build.make examples/memcached/server/CMakeFiles/memcached_debug.dir/Session.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/Session.cc.s
 .PHONY : Session.cc.s
 
 footprint_test.o: footprint_test.cc.o
@@ -282,7 +282,7 @@ footprint_test.o: footprint_test.cc.o
 
 # target to build an object file
 footprint_test.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/footprint_test.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/footprint_test.cc.o
 .PHONY : footprint_test.cc.o
 
 footprint_test.i: footprint_test.cc.i
@@ -291,7 +291,7 @@ footprint_test.i: footprint_test.cc.i
 
 # target to preprocess a source file
 footprint_test.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/footprint_test.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/footprint_test.cc.i
 .PHONY : footprint_test.cc.i
 
 footprint_test.s: footprint_test.cc.s
@@ -300,7 +300,7 @@ footprint_test.s: footprint_test.cc.s
 
 # target to generate assembly for a file
 footprint_test.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/footprint_test.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/footprint_test.cc.s
 .PHONY : footprint_test.cc.s
 
 server.o: server.cc.o
@@ -309,7 +309,7 @@ server.o: server.cc.o
 
 # target to build an object file
 server.cc.o:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_debug.dir/build.make examples/memcached/server/CMakeFiles/memcached_debug.dir/server.cc.o
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_debug.dir/build.make examples/memcached/server/CMakeFiles/memcached_debug.dir/server.cc.o
 .PHONY : server.cc.o
 
 server.i: server.cc.i
@@ -318,7 +318,7 @@ server.i: server.cc.i
 
 # target to preprocess a source file
 server.cc.i:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_debug.dir/build.make examples/memcached/server/CMakeFiles/memcached_debug.dir/server.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_debug.dir/build.make examples/memcached/server/CMakeFiles/memcached_debug.dir/server.cc.i
 .PHONY : server.cc.i
 
 server.s: server.cc.s
@@ -327,7 +327,7 @@ server.s: server.cc.s
 
 # target to generate assembly for a file
 server.cc.s:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_debug.dir/build.make examples/memcached/server/CMakeFiles/memcached_debug.dir/server.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(MAKE) -f examples/memcached/server/CMakeFiles/memcached_debug.dir/build.make examples/memcached/server/CMakeFiles/memcached_debug.dir/server.cc.s
 .PHONY : server.cc.s
 
 # Help Target
@@ -370,6 +370,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

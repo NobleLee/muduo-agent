@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/gaoguili/Desktop/muduo-1.0.1/muduo/net/protobuf/ProtobufCodecLite.cc" "/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/protobuf/CMakeFiles/muduo_protobuf_codec_cpp11.dir/ProtobufCodecLite.cc.o"
+  "/home/gaoguili/CLionProjects/muduo-agent/muduo/net/protobuf/ProtobufCodecLite.cc" "/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/protobuf/CMakeFiles/muduo_protobuf_codec_cpp11.dir/ProtobufCodecLite.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -16,8 +16,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/CMakeFiles/muduo_net_cpp11.dir/DependInfo.cmake"
-  "/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/base/CMakeFiles/muduo_base_cpp11.dir/DependInfo.cmake"
+  "/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/CMakeFiles/muduo_net_cpp11.dir/DependInfo.cmake"
+  "/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/base/CMakeFiles/muduo_base_cpp11.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

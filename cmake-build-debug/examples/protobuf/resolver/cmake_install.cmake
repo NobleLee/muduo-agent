@@ -1,4 +1,4 @@
-# Install script for directory: /home/gaoguili/Desktop/muduo-1.0.1/examples/protobuf/resolver
+# Install script for directory: /home/gaoguili/CLionProjects/muduo-agent/examples/protobuf/resolver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

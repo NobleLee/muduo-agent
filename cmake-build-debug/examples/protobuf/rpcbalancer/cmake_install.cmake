@@ -1,4 +1,4 @@
-# Install script for directory: /home/gaoguili/Desktop/muduo-1.0.1/examples/protobuf/rpcbalancer
+# Install script for directory: /home/gaoguili/CLionProjects/muduo-agent/examples/protobuf/rpcbalancer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

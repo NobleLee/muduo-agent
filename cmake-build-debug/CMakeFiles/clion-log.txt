@@ -1,29 +1,9 @@
-/usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/gaoguili/Desktop/muduo-1.0.1
--- The CXX compiler identification is GNU 8.1.0
--- Check for working CXX compiler: /usr/local/bin/c++
--- Check for working CXX compiler: /usr/local/bin/c++ -- works
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Detecting CXX compile features
--- Detecting CXX compile features - done
+/usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/gaoguili/CLionProjects/muduo-agent
 -- Boost version: 1.63.0
--- Looking for C++ include pthread.h
--- Looking for C++ include pthread.h - found
--- Looking for pthread_create
--- Looking for pthread_create - not found
--- Looking for pthread_create in pthreads
--- Looking for pthread_create in pthreads - not found
--- Looking for pthread_create in pthread
--- Looking for pthread_create in pthread - found
--- Found Threads: TRUE  
--- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "3.0.0") 
--- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.58.0") 
--- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
--- found cares
--- found curl
--- found protobuf
+-- Could NOT find Protobuf (missing: Protobuf_INCLUDE_DIR) 
+-- Could NOT find CURL (missing: CURL_LIBRARY CURL_INCLUDE_DIR) 
 -- found zlib
 -- CXX_FLAGS = -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -rdynamic -O0
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+-- Build files have been written to: /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug

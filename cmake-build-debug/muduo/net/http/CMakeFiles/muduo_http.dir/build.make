@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gaoguili/Desktop/muduo-1.0.1
+CMAKE_SOURCE_DIR = /home/gaoguili/CLionProjects/muduo-agent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include muduo/net/http/CMakeFiles/muduo_http.dir/depend.make
@@ -59,16 +59,16 @@ include muduo/net/http/CMakeFiles/muduo_http.dir/flags.make
 
 muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.o: muduo/net/http/CMakeFiles/muduo_http.dir/flags.make
 muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.o: ../muduo/net/http/HttpServer.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.o"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/http && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/muduo_http.dir/HttpServer.cc.o -c /home/gaoguili/Desktop/muduo-1.0.1/muduo/net/http/HttpServer.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.o"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/http && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/muduo_http.dir/HttpServer.cc.o -c /home/gaoguili/CLionProjects/muduo-agent/muduo/net/http/HttpServer.cc
 
 muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/muduo_http.dir/HttpServer.cc.i"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/http && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/Desktop/muduo-1.0.1/muduo/net/http/HttpServer.cc > CMakeFiles/muduo_http.dir/HttpServer.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/http && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/CLionProjects/muduo-agent/muduo/net/http/HttpServer.cc > CMakeFiles/muduo_http.dir/HttpServer.cc.i
 
 muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/muduo_http.dir/HttpServer.cc.s"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/http && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/Desktop/muduo-1.0.1/muduo/net/http/HttpServer.cc -o CMakeFiles/muduo_http.dir/HttpServer.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/http && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/CLionProjects/muduo-agent/muduo/net/http/HttpServer.cc -o CMakeFiles/muduo_http.dir/HttpServer.cc.s
 
 muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.o.requires:
 
@@ -83,16 +83,16 @@ muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.o.provides.build: muduo/n
 
 muduo/net/http/CMakeFiles/muduo_http.dir/HttpResponse.cc.o: muduo/net/http/CMakeFiles/muduo_http.dir/flags.make
 muduo/net/http/CMakeFiles/muduo_http.dir/HttpResponse.cc.o: ../muduo/net/http/HttpResponse.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object muduo/net/http/CMakeFiles/muduo_http.dir/HttpResponse.cc.o"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/http && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/muduo_http.dir/HttpResponse.cc.o -c /home/gaoguili/Desktop/muduo-1.0.1/muduo/net/http/HttpResponse.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object muduo/net/http/CMakeFiles/muduo_http.dir/HttpResponse.cc.o"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/http && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/muduo_http.dir/HttpResponse.cc.o -c /home/gaoguili/CLionProjects/muduo-agent/muduo/net/http/HttpResponse.cc
 
 muduo/net/http/CMakeFiles/muduo_http.dir/HttpResponse.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/muduo_http.dir/HttpResponse.cc.i"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/http && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/Desktop/muduo-1.0.1/muduo/net/http/HttpResponse.cc > CMakeFiles/muduo_http.dir/HttpResponse.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/http && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/CLionProjects/muduo-agent/muduo/net/http/HttpResponse.cc > CMakeFiles/muduo_http.dir/HttpResponse.cc.i
 
 muduo/net/http/CMakeFiles/muduo_http.dir/HttpResponse.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/muduo_http.dir/HttpResponse.cc.s"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/http && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/Desktop/muduo-1.0.1/muduo/net/http/HttpResponse.cc -o CMakeFiles/muduo_http.dir/HttpResponse.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/http && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/CLionProjects/muduo-agent/muduo/net/http/HttpResponse.cc -o CMakeFiles/muduo_http.dir/HttpResponse.cc.s
 
 muduo/net/http/CMakeFiles/muduo_http.dir/HttpResponse.cc.o.requires:
 
@@ -117,9 +117,9 @@ lib/libmuduo_http.a: muduo/net/http/CMakeFiles/muduo_http.dir/HttpServer.cc.o
 lib/libmuduo_http.a: muduo/net/http/CMakeFiles/muduo_http.dir/HttpResponse.cc.o
 lib/libmuduo_http.a: muduo/net/http/CMakeFiles/muduo_http.dir/build.make
 lib/libmuduo_http.a: muduo/net/http/CMakeFiles/muduo_http.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../../../lib/libmuduo_http.a"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/http && $(CMAKE_COMMAND) -P CMakeFiles/muduo_http.dir/cmake_clean_target.cmake
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/http && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/muduo_http.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../../../lib/libmuduo_http.a"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/http && $(CMAKE_COMMAND) -P CMakeFiles/muduo_http.dir/cmake_clean_target.cmake
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/http && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/muduo_http.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 muduo/net/http/CMakeFiles/muduo_http.dir/build: lib/libmuduo_http.a
@@ -132,10 +132,10 @@ muduo/net/http/CMakeFiles/muduo_http.dir/requires: muduo/net/http/CMakeFiles/mud
 .PHONY : muduo/net/http/CMakeFiles/muduo_http.dir/requires
 
 muduo/net/http/CMakeFiles/muduo_http.dir/clean:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/http && $(CMAKE_COMMAND) -P CMakeFiles/muduo_http.dir/cmake_clean.cmake
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/http && $(CMAKE_COMMAND) -P CMakeFiles/muduo_http.dir/cmake_clean.cmake
 .PHONY : muduo/net/http/CMakeFiles/muduo_http.dir/clean
 
 muduo/net/http/CMakeFiles/muduo_http.dir/depend:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/Desktop/muduo-1.0.1 /home/gaoguili/Desktop/muduo-1.0.1/muduo/net/http /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/http /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/net/http/CMakeFiles/muduo_http.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/CLionProjects/muduo-agent /home/gaoguili/CLionProjects/muduo-agent/muduo/net/http /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/http /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/net/http/CMakeFiles/muduo_http.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : muduo/net/http/CMakeFiles/muduo_http.dir/depend
 

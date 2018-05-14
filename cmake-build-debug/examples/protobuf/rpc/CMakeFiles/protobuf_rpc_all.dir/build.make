@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gaoguili/Desktop/muduo-1.0.1
+CMAKE_SOURCE_DIR = /home/gaoguili/CLionProjects/muduo-agent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug
 
 # Utility rule file for protobuf_rpc_all.
 
@@ -75,10 +75,10 @@ examples/protobuf/rpc/CMakeFiles/protobuf_rpc_all.dir/build: protobuf_rpc_all
 .PHONY : examples/protobuf/rpc/CMakeFiles/protobuf_rpc_all.dir/build
 
 examples/protobuf/rpc/CMakeFiles/protobuf_rpc_all.dir/clean:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/protobuf/rpc && $(CMAKE_COMMAND) -P CMakeFiles/protobuf_rpc_all.dir/cmake_clean.cmake
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/protobuf/rpc && $(CMAKE_COMMAND) -P CMakeFiles/protobuf_rpc_all.dir/cmake_clean.cmake
 .PHONY : examples/protobuf/rpc/CMakeFiles/protobuf_rpc_all.dir/clean
 
 examples/protobuf/rpc/CMakeFiles/protobuf_rpc_all.dir/depend:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/Desktop/muduo-1.0.1 /home/gaoguili/Desktop/muduo-1.0.1/examples/protobuf/rpc /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/protobuf/rpc /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/protobuf/rpc/CMakeFiles/protobuf_rpc_all.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/CLionProjects/muduo-agent /home/gaoguili/CLionProjects/muduo-agent/examples/protobuf/rpc /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/protobuf/rpc /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/protobuf/rpc/CMakeFiles/protobuf_rpc_all.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/protobuf/rpc/CMakeFiles/protobuf_rpc_all.dir/depend
 

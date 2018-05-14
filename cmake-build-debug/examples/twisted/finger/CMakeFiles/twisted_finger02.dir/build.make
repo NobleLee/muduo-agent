@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gaoguili/Desktop/muduo-1.0.1
+CMAKE_SOURCE_DIR = /home/gaoguili/CLionProjects/muduo-agent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include examples/twisted/finger/CMakeFiles/twisted_finger02.dir/depend.make
@@ -59,16 +59,16 @@ include examples/twisted/finger/CMakeFiles/twisted_finger02.dir/flags.make
 
 examples/twisted/finger/CMakeFiles/twisted_finger02.dir/finger02.cc.o: examples/twisted/finger/CMakeFiles/twisted_finger02.dir/flags.make
 examples/twisted/finger/CMakeFiles/twisted_finger02.dir/finger02.cc.o: ../examples/twisted/finger/finger02.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/twisted/finger/CMakeFiles/twisted_finger02.dir/finger02.cc.o"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/twisted/finger && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/twisted_finger02.dir/finger02.cc.o -c /home/gaoguili/Desktop/muduo-1.0.1/examples/twisted/finger/finger02.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/twisted/finger/CMakeFiles/twisted_finger02.dir/finger02.cc.o"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/twisted/finger && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/twisted_finger02.dir/finger02.cc.o -c /home/gaoguili/CLionProjects/muduo-agent/examples/twisted/finger/finger02.cc
 
 examples/twisted/finger/CMakeFiles/twisted_finger02.dir/finger02.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/twisted_finger02.dir/finger02.cc.i"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/twisted/finger && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/Desktop/muduo-1.0.1/examples/twisted/finger/finger02.cc > CMakeFiles/twisted_finger02.dir/finger02.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/twisted/finger && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/CLionProjects/muduo-agent/examples/twisted/finger/finger02.cc > CMakeFiles/twisted_finger02.dir/finger02.cc.i
 
 examples/twisted/finger/CMakeFiles/twisted_finger02.dir/finger02.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/twisted_finger02.dir/finger02.cc.s"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/twisted/finger && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/Desktop/muduo-1.0.1/examples/twisted/finger/finger02.cc -o CMakeFiles/twisted_finger02.dir/finger02.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/twisted/finger && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/CLionProjects/muduo-agent/examples/twisted/finger/finger02.cc -o CMakeFiles/twisted_finger02.dir/finger02.cc.s
 
 examples/twisted/finger/CMakeFiles/twisted_finger02.dir/finger02.cc.o.requires:
 
@@ -93,8 +93,8 @@ bin/twisted_finger02: examples/twisted/finger/CMakeFiles/twisted_finger02.dir/bu
 bin/twisted_finger02: lib/libmuduo_net.a
 bin/twisted_finger02: lib/libmuduo_base.a
 bin/twisted_finger02: examples/twisted/finger/CMakeFiles/twisted_finger02.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../../bin/twisted_finger02"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/twisted/finger && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/twisted_finger02.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../../bin/twisted_finger02"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/twisted/finger && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/twisted_finger02.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/twisted/finger/CMakeFiles/twisted_finger02.dir/build: bin/twisted_finger02
@@ -106,10 +106,10 @@ examples/twisted/finger/CMakeFiles/twisted_finger02.dir/requires: examples/twist
 .PHONY : examples/twisted/finger/CMakeFiles/twisted_finger02.dir/requires
 
 examples/twisted/finger/CMakeFiles/twisted_finger02.dir/clean:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/twisted/finger && $(CMAKE_COMMAND) -P CMakeFiles/twisted_finger02.dir/cmake_clean.cmake
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/twisted/finger && $(CMAKE_COMMAND) -P CMakeFiles/twisted_finger02.dir/cmake_clean.cmake
 .PHONY : examples/twisted/finger/CMakeFiles/twisted_finger02.dir/clean
 
 examples/twisted/finger/CMakeFiles/twisted_finger02.dir/depend:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/Desktop/muduo-1.0.1 /home/gaoguili/Desktop/muduo-1.0.1/examples/twisted/finger /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/twisted/finger /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/twisted/finger/CMakeFiles/twisted_finger02.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/CLionProjects/muduo-agent /home/gaoguili/CLionProjects/muduo-agent/examples/twisted/finger /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/twisted/finger /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/twisted/finger/CMakeFiles/twisted_finger02.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/twisted/finger/CMakeFiles/twisted_finger02.dir/depend
 

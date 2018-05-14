@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gaoguili/Desktop/muduo-1.0.1
+CMAKE_SOURCE_DIR = /home/gaoguili/CLionProjects/muduo-agent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/depend.make
@@ -59,16 +59,16 @@ include examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/flags.make
 
 examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.cc.o: examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/flags.make
 examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.cc.o: ../examples/sudoku/server_threadpool.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.cc.o"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/sudoku && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.cc.o -c /home/gaoguili/Desktop/muduo-1.0.1/examples/sudoku/server_threadpool.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.cc.o"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/sudoku && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.cc.o -c /home/gaoguili/CLionProjects/muduo-agent/examples/sudoku/server_threadpool.cc
 
 examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.cc.i"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/sudoku && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/Desktop/muduo-1.0.1/examples/sudoku/server_threadpool.cc > CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/sudoku && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/CLionProjects/muduo-agent/examples/sudoku/server_threadpool.cc > CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.cc.i
 
 examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.cc.s"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/sudoku && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/Desktop/muduo-1.0.1/examples/sudoku/server_threadpool.cc -o CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/sudoku && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/CLionProjects/muduo-agent/examples/sudoku/server_threadpool.cc -o CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.cc.s
 
 examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.cc.o.requires:
 
@@ -83,16 +83,16 @@ examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/server_threadpool.cc.o.p
 
 examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/sudoku.cc.o: examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/flags.make
 examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/sudoku.cc.o: ../examples/sudoku/sudoku.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/sudoku.cc.o"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/sudoku && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sudoku_solver_threadpool.dir/sudoku.cc.o -c /home/gaoguili/Desktop/muduo-1.0.1/examples/sudoku/sudoku.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/sudoku.cc.o"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/sudoku && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sudoku_solver_threadpool.dir/sudoku.cc.o -c /home/gaoguili/CLionProjects/muduo-agent/examples/sudoku/sudoku.cc
 
 examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/sudoku.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sudoku_solver_threadpool.dir/sudoku.cc.i"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/sudoku && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/Desktop/muduo-1.0.1/examples/sudoku/sudoku.cc > CMakeFiles/sudoku_solver_threadpool.dir/sudoku.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/sudoku && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/CLionProjects/muduo-agent/examples/sudoku/sudoku.cc > CMakeFiles/sudoku_solver_threadpool.dir/sudoku.cc.i
 
 examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/sudoku.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sudoku_solver_threadpool.dir/sudoku.cc.s"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/sudoku && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/Desktop/muduo-1.0.1/examples/sudoku/sudoku.cc -o CMakeFiles/sudoku_solver_threadpool.dir/sudoku.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/sudoku && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/CLionProjects/muduo-agent/examples/sudoku/sudoku.cc -o CMakeFiles/sudoku_solver_threadpool.dir/sudoku.cc.s
 
 examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/sudoku.cc.o.requires:
 
@@ -119,8 +119,8 @@ bin/sudoku_solver_threadpool: examples/sudoku/CMakeFiles/sudoku_solver_threadpoo
 bin/sudoku_solver_threadpool: lib/libmuduo_net.a
 bin/sudoku_solver_threadpool: lib/libmuduo_base.a
 bin/sudoku_solver_threadpool: examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../bin/sudoku_solver_threadpool"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/sudoku && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sudoku_solver_threadpool.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../bin/sudoku_solver_threadpool"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/sudoku && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sudoku_solver_threadpool.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/build: bin/sudoku_solver_threadpool
@@ -133,10 +133,10 @@ examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/requires: examples/sudok
 .PHONY : examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/requires
 
 examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/clean:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/sudoku && $(CMAKE_COMMAND) -P CMakeFiles/sudoku_solver_threadpool.dir/cmake_clean.cmake
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/sudoku && $(CMAKE_COMMAND) -P CMakeFiles/sudoku_solver_threadpool.dir/cmake_clean.cmake
 .PHONY : examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/clean
 
 examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/depend:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/Desktop/muduo-1.0.1 /home/gaoguili/Desktop/muduo-1.0.1/examples/sudoku /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/sudoku /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/CLionProjects/muduo-agent /home/gaoguili/CLionProjects/muduo-agent/examples/sudoku /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/sudoku /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/sudoku/CMakeFiles/sudoku_solver_threadpool.dir/depend
 

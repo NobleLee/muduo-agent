@@ -206,7 +206,23 @@ muduo/net/TcpServer.h
 boost/noncopyable.hpp
 -
 
-/home/gaoguili/Desktop/muduo-1.0.1/muduo/net/http/tests/HttpServer_test.cc
+/home/gaoguili/CLionProjects/muduo-agent/muduo/net/http/tests/HttpAgentConsumer.cpp
+muduo/net/http/HttpServer.h
+-
+muduo/net/http/HttpRequest.h
+-
+muduo/net/http/HttpResponse.h
+-
+muduo/net/EventLoop.h
+-
+muduo/base/Logging.h
+-
+iostream
+-
+map
+-
+
+/home/gaoguili/CLionProjects/muduo-agent/muduo/net/http/tests/HttpServer_test.cc
 muduo/net/http/HttpServer.h
 -
 muduo/net/http/HttpRequest.h

@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gaoguili/Desktop/muduo-1.0.1
+CMAKE_SOURCE_DIR = /home/gaoguili/CLionProjects/muduo-agent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include examples/curl/CMakeFiles/muduo_curl.dir/depend.make
@@ -59,16 +59,16 @@ include examples/curl/CMakeFiles/muduo_curl.dir/flags.make
 
 examples/curl/CMakeFiles/muduo_curl.dir/Curl.cc.o: examples/curl/CMakeFiles/muduo_curl.dir/flags.make
 examples/curl/CMakeFiles/muduo_curl.dir/Curl.cc.o: ../examples/curl/Curl.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/curl/CMakeFiles/muduo_curl.dir/Curl.cc.o"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/curl && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/muduo_curl.dir/Curl.cc.o -c /home/gaoguili/Desktop/muduo-1.0.1/examples/curl/Curl.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/curl/CMakeFiles/muduo_curl.dir/Curl.cc.o"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/curl && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/muduo_curl.dir/Curl.cc.o -c /home/gaoguili/CLionProjects/muduo-agent/examples/curl/Curl.cc
 
 examples/curl/CMakeFiles/muduo_curl.dir/Curl.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/muduo_curl.dir/Curl.cc.i"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/curl && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/Desktop/muduo-1.0.1/examples/curl/Curl.cc > CMakeFiles/muduo_curl.dir/Curl.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/curl && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/CLionProjects/muduo-agent/examples/curl/Curl.cc > CMakeFiles/muduo_curl.dir/Curl.cc.i
 
 examples/curl/CMakeFiles/muduo_curl.dir/Curl.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/muduo_curl.dir/Curl.cc.s"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/curl && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/Desktop/muduo-1.0.1/examples/curl/Curl.cc -o CMakeFiles/muduo_curl.dir/Curl.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/curl && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/CLionProjects/muduo-agent/examples/curl/Curl.cc -o CMakeFiles/muduo_curl.dir/Curl.cc.s
 
 examples/curl/CMakeFiles/muduo_curl.dir/Curl.cc.o.requires:
 
@@ -91,9 +91,9 @@ muduo_curl_EXTERNAL_OBJECTS =
 lib/libmuduo_curl.a: examples/curl/CMakeFiles/muduo_curl.dir/Curl.cc.o
 lib/libmuduo_curl.a: examples/curl/CMakeFiles/muduo_curl.dir/build.make
 lib/libmuduo_curl.a: examples/curl/CMakeFiles/muduo_curl.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../lib/libmuduo_curl.a"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/curl && $(CMAKE_COMMAND) -P CMakeFiles/muduo_curl.dir/cmake_clean_target.cmake
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/curl && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/muduo_curl.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../lib/libmuduo_curl.a"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/curl && $(CMAKE_COMMAND) -P CMakeFiles/muduo_curl.dir/cmake_clean_target.cmake
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/curl && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/muduo_curl.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/curl/CMakeFiles/muduo_curl.dir/build: lib/libmuduo_curl.a
@@ -105,10 +105,10 @@ examples/curl/CMakeFiles/muduo_curl.dir/requires: examples/curl/CMakeFiles/muduo
 .PHONY : examples/curl/CMakeFiles/muduo_curl.dir/requires
 
 examples/curl/CMakeFiles/muduo_curl.dir/clean:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/curl && $(CMAKE_COMMAND) -P CMakeFiles/muduo_curl.dir/cmake_clean.cmake
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/curl && $(CMAKE_COMMAND) -P CMakeFiles/muduo_curl.dir/cmake_clean.cmake
 .PHONY : examples/curl/CMakeFiles/muduo_curl.dir/clean
 
 examples/curl/CMakeFiles/muduo_curl.dir/depend:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/Desktop/muduo-1.0.1 /home/gaoguili/Desktop/muduo-1.0.1/examples/curl /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/curl /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/curl/CMakeFiles/muduo_curl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/CLionProjects/muduo-agent /home/gaoguili/CLionProjects/muduo-agent/examples/curl /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/curl /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/curl/CMakeFiles/muduo_curl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/curl/CMakeFiles/muduo_curl.dir/depend
 

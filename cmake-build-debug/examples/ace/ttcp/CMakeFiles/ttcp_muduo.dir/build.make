@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/src/information/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/src/clion-2018.1.2/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gaoguili/Desktop/muduo-1.0.1
+CMAKE_SOURCE_DIR = /home/gaoguili/CLionProjects/muduo-agent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/depend.make
@@ -59,16 +59,16 @@ include examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/flags.make
 
 examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/ttcp.cc.o: examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/flags.make
 examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/ttcp.cc.o: ../examples/ace/ttcp/ttcp.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/ttcp.cc.o"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/ace/ttcp && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttcp_muduo.dir/ttcp.cc.o -c /home/gaoguili/Desktop/muduo-1.0.1/examples/ace/ttcp/ttcp.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/ttcp.cc.o"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/ace/ttcp && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttcp_muduo.dir/ttcp.cc.o -c /home/gaoguili/CLionProjects/muduo-agent/examples/ace/ttcp/ttcp.cc
 
 examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/ttcp.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttcp_muduo.dir/ttcp.cc.i"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/ace/ttcp && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/Desktop/muduo-1.0.1/examples/ace/ttcp/ttcp.cc > CMakeFiles/ttcp_muduo.dir/ttcp.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/ace/ttcp && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/CLionProjects/muduo-agent/examples/ace/ttcp/ttcp.cc > CMakeFiles/ttcp_muduo.dir/ttcp.cc.i
 
 examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/ttcp.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttcp_muduo.dir/ttcp.cc.s"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/ace/ttcp && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/Desktop/muduo-1.0.1/examples/ace/ttcp/ttcp.cc -o CMakeFiles/ttcp_muduo.dir/ttcp.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/ace/ttcp && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/CLionProjects/muduo-agent/examples/ace/ttcp/ttcp.cc -o CMakeFiles/ttcp_muduo.dir/ttcp.cc.s
 
 examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/ttcp.cc.o.requires:
 
@@ -83,16 +83,16 @@ examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/ttcp.cc.o.provides.build: examples/a
 
 examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/common.cc.o: examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/flags.make
 examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/common.cc.o: ../examples/ace/ttcp/common.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/common.cc.o"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/ace/ttcp && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttcp_muduo.dir/common.cc.o -c /home/gaoguili/Desktop/muduo-1.0.1/examples/ace/ttcp/common.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/common.cc.o"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/ace/ttcp && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttcp_muduo.dir/common.cc.o -c /home/gaoguili/CLionProjects/muduo-agent/examples/ace/ttcp/common.cc
 
 examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/common.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttcp_muduo.dir/common.cc.i"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/ace/ttcp && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/Desktop/muduo-1.0.1/examples/ace/ttcp/common.cc > CMakeFiles/ttcp_muduo.dir/common.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/ace/ttcp && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/CLionProjects/muduo-agent/examples/ace/ttcp/common.cc > CMakeFiles/ttcp_muduo.dir/common.cc.i
 
 examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/common.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttcp_muduo.dir/common.cc.s"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/ace/ttcp && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/Desktop/muduo-1.0.1/examples/ace/ttcp/common.cc -o CMakeFiles/ttcp_muduo.dir/common.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/ace/ttcp && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/CLionProjects/muduo-agent/examples/ace/ttcp/common.cc -o CMakeFiles/ttcp_muduo.dir/common.cc.s
 
 examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/common.cc.o.requires:
 
@@ -107,16 +107,16 @@ examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/common.cc.o.provides.build: examples
 
 examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/main.cc.o: examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/flags.make
 examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/main.cc.o: ../examples/ace/ttcp/main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/main.cc.o"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/ace/ttcp && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttcp_muduo.dir/main.cc.o -c /home/gaoguili/Desktop/muduo-1.0.1/examples/ace/ttcp/main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/main.cc.o"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/ace/ttcp && g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ttcp_muduo.dir/main.cc.o -c /home/gaoguili/CLionProjects/muduo-agent/examples/ace/ttcp/main.cc
 
 examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ttcp_muduo.dir/main.cc.i"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/ace/ttcp && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/Desktop/muduo-1.0.1/examples/ace/ttcp/main.cc > CMakeFiles/ttcp_muduo.dir/main.cc.i
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/ace/ttcp && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gaoguili/CLionProjects/muduo-agent/examples/ace/ttcp/main.cc > CMakeFiles/ttcp_muduo.dir/main.cc.i
 
 examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ttcp_muduo.dir/main.cc.s"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/ace/ttcp && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/Desktop/muduo-1.0.1/examples/ace/ttcp/main.cc -o CMakeFiles/ttcp_muduo.dir/main.cc.s
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/ace/ttcp && g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gaoguili/CLionProjects/muduo-agent/examples/ace/ttcp/main.cc -o CMakeFiles/ttcp_muduo.dir/main.cc.s
 
 examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/main.cc.o.requires:
 
@@ -145,8 +145,8 @@ bin/ttcp_muduo: examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/build.make
 bin/ttcp_muduo: lib/libmuduo_net.a
 bin/ttcp_muduo: lib/libmuduo_base.a
 bin/ttcp_muduo: examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../../../bin/ttcp_muduo"
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/ace/ttcp && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ttcp_muduo.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../../../bin/ttcp_muduo"
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/ace/ttcp && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ttcp_muduo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/build: bin/ttcp_muduo
@@ -160,10 +160,10 @@ examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/requires: examples/ace/ttcp/CMakeFil
 .PHONY : examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/requires
 
 examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/clean:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/ace/ttcp && $(CMAKE_COMMAND) -P CMakeFiles/ttcp_muduo.dir/cmake_clean.cmake
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/ace/ttcp && $(CMAKE_COMMAND) -P CMakeFiles/ttcp_muduo.dir/cmake_clean.cmake
 .PHONY : examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/clean
 
 examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/depend:
-	cd /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/Desktop/muduo-1.0.1 /home/gaoguili/Desktop/muduo-1.0.1/examples/ace/ttcp /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/ace/ttcp /home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gaoguili/CLionProjects/muduo-agent /home/gaoguili/CLionProjects/muduo-agent/examples/ace/ttcp /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/ace/ttcp /home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/depend
 

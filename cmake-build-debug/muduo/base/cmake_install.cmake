@@ -1,4 +1,4 @@
-# Install script for directory: /home/gaoguili/Desktop/muduo-1.0.1/muduo/base
+# Install script for directory: /home/gaoguili/CLionProjects/muduo-agent/muduo/base
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,48 +38,48 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/lib/libmuduo_base.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/lib/libmuduo_base.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/lib/libmuduo_base_cpp11.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/lib/libmuduo_base_cpp11.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/muduo/base" TYPE FILE FILES
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/AsyncLogging.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/Atomic.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/BlockingQueue.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/BoundedBlockingQueue.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/Condition.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/CountDownLatch.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/CurrentThread.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/Date.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/Exception.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/FileUtil.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/GzipFile.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/LogFile.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/LogStream.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/Logging.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/Mutex.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/ProcessInfo.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/Singleton.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/StringPiece.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/Thread.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/ThreadLocal.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/ThreadLocalSingleton.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/ThreadPool.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/TimeZone.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/Timestamp.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/Types.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/WeakCallback.h"
-    "/home/gaoguili/Desktop/muduo-1.0.1/muduo/base/copyable.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/AsyncLogging.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/Atomic.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/BlockingQueue.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/BoundedBlockingQueue.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/Condition.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/CountDownLatch.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/CurrentThread.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/Date.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/Exception.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/FileUtil.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/GzipFile.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/LogFile.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/LogStream.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/Logging.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/Mutex.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/ProcessInfo.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/Singleton.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/StringPiece.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/Thread.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/ThreadLocal.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/ThreadLocalSingleton.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/ThreadPool.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/TimeZone.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/Timestamp.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/Types.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/WeakCallback.h"
+    "/home/gaoguili/CLionProjects/muduo-agent/muduo/base/copyable.h"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/gaoguili/Desktop/muduo-1.0.1/cmake-build-debug/muduo/base/tests/cmake_install.cmake")
+  include("/home/gaoguili/CLionProjects/muduo-agent/cmake-build-debug/muduo/base/tests/cmake_install.cmake")
 
 endif()
 
